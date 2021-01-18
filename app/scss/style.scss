@@ -3,5 +3,98 @@
 @import 'reset';
 @import 'global';
 
+.header {
+  padding: 48px 0 45px;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  margin-left: 100px;
+  &__list {
+    display: flex;
+  }
+  &__list-item + .menu__list-item {
+    padding-left: 40px;
+  }
+  &__list-link {
+    font-size: 15px;
+    line-height: 12px;
+    color: #436372;
+    @extend %Rubik-500;
+  }
+  &__list-link--plus::after {
+    content: '+';
+    height: 8px;
+    width: 8px;
+    margin-left: 4px;
+  }
+}
+
+.user-nav {
+  display: flex;
+  &__link {
+    display: flex;
+      align-items: center;
+    position: relative;
+  }
+  &__link+.user-nav__link {
+    padding-left: 50px;
+  }
+  &__link--search {
+    background-color: #edf1f4;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    justify-content: center;
+  }
+  &__link--menu {
+    background-color: #a3bbc8;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 0 20px;
+    background-color: $background;
+    height: 50px;
+    width: 178px;
+    border-radius: 25px;
+  }
+  &__border {
+    position: absolute;
+    border-right: 1px solid #fde7d3;
+    bottom: 10px;
+    top: 10px;
+    left: 48px;
+  }
+  &__num {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #fff;
+    top: 9px;
+    right: -11px;
+    font-size: 10px;
+    line-height: 16px;
+    text-align: center;
+    color: $default;
+  }
+}
+
+
+
+
+
+
 
 @import 'media';
