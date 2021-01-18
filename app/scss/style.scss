@@ -16,15 +16,12 @@
   display: flex;
   align-items: center;
   margin-left: 100px;
-
   &__list {
     display: flex;
   }
-
-  &__list-item+.menu__list-item {
+  &__list-item + .menu__list-item {
     padding-left: 40px;
   }
-
   &__list-link {
     font-size: 15px;
     line-height: 12px;
@@ -42,17 +39,14 @@
 
 .user-nav {
   display: flex;
-
   &__link {
     display: flex;
-    align-items: center;
+      align-items: center;
     position: relative;
   }
-
   &__link+.user-nav__link {
     padding-left: 50px;
   }
-
   &__link--search {
     background-color: #edf1f4;
     height: 50px;
