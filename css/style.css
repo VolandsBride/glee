@@ -19,7 +19,7 @@ body, .footer-top__form {
 }
 
 @font-face {
-  font-family: 'DMSans-Regular', sans-serif;
+  font-family: 'DMSans-Regular';
   font-weight: 400;
   font-style: normal;
   src: local("DMSans-Regular"), url("../fonts/DMSans-Regular.woff2") format("woff2"), url("../fonts/DMSans-Regular.woff") format("woff");
@@ -27,7 +27,7 @@ body, .footer-top__form {
 }
 
 @font-face {
-  font-family: 'DMSans-Medium', sans-serif;
+  font-family: 'DMSans-Medium';
   font-weight: 500;
   font-style: normal;
   src: local("DMSans-Medium"), url("../fonts/DMSans-Medium.woff2") format("woff2"), url("../fonts/DMSans-Medium.woff") format("woff");
@@ -35,7 +35,7 @@ body, .footer-top__form {
 }
 
 @font-face {
-  font-family: 'DMSans-Bold', sans-serif;
+  font-family: 'DMSans-Bold';
   font-weight: 700;
   font-style: normal;
   src: local("DMSans-Bold"), url("../fonts/DMSans-Bold.woff2") format("woff2"), url("../fonts/DMSans-Bold.woff") format("woff");
@@ -43,7 +43,7 @@ body, .footer-top__form {
 }
 
 @font-face {
-  font-family: 'Rubik-Regular', sans-serif;
+  font-family: 'Rubik-Regular';
   font-weight: 400;
   font-style: normal;
   src: local("Rubik-Regular"), url("../fonts/Rubik-Regular.woff2") format("woff2"), url("../fonts/Rubik-Regular.woff") format("woff");
@@ -51,7 +51,7 @@ body, .footer-top__form {
 }
 
 @font-face {
-  font-family: 'Rubik-Medium', sans-serif;
+  font-family: 'Rubik-Medium';
   font-weight: 500;
   font-style: normal;
   src: local("Rubik-Medium"), url("../fonts/Rubik-Medium.woff2") format("woff2"), url("../fonts/Rubik-Medium.woff") format("woff");
@@ -59,7 +59,7 @@ body, .footer-top__form {
 }
 
 @font-face {
-  font-family: 'Rubik-Bold', sans-serif;
+  font-family: 'Rubik-Bold';
   font-weight: 700;
   font-style: normal;
   src: local("Rubik-Bold"), url("../fonts/Rubik-Bold.woff2") format("woff2"), url("../fonts/Rubik-Bold.woff") format("woff");
@@ -189,7 +189,7 @@ body {
 }
 
 .menu__list-item + .menu__list-item {
-  padding-left: 40px;
+  padding-left: 35px;
 }
 
 .menu__list-link {
@@ -308,24 +308,24 @@ body {
 }
 
 .footer-top__logo {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   display: block;
 }
 
 .footer-top__address-item {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .footer-top__title {
   font-size: 16px;
   text-transform: uppercase;
   padding-top: 14px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   color: #262726;
 }
 
 .footer-top__text {
-  margin-bottom: 14px;
+  margin-bottom: 7px;
 }
 
 .footer-top__newsletter {
@@ -333,7 +333,7 @@ body {
 }
 
 .footer-top__form-text {
-  margin-bottom: 36px;
+  margin-bottom: 30px;
 }
 
 .footer-top__form {
@@ -348,7 +348,7 @@ body {
   width: 100%;
   border: none;
   color: #234969;
-  padding: 12px 0 12px 15px;
+  padding: 9px 0 9px 15px;
 }
 
 .footer-top__form-input::-webkit-input-placeholder {
@@ -370,7 +370,7 @@ body {
 .footer-top__form-btn {
   border: none;
   background-color: #a3bbc8;
-  padding: 12px 18px;
+  padding: 9px 18px;
   color: white;
   cursor: pointer;
 }
