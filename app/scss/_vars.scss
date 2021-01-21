@@ -34,3 +34,12 @@ $button: #a3bbc8;
   font-family: 'Rubik-Bold', sans-serif;
   font-weight: 700;
 }
+
+%btn {
+  border: none;
+  padding: 20px 100px 20px 26px;
+  background-color: $button;
+  color: white;
+  @extend %Rubik-500;
+  cursor: pointer;
+}
