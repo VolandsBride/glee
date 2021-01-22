@@ -26,7 +26,15 @@
     font-size: 15px;
     line-height: 12px;
     color: #436372;
+    border-bottom: 1px solid transparent;
     @extend %Rubik-500;
+    transition: border-bottom 0.3s;
+    &:hover {
+      border-bottom: 1px solid #436372;
+    }
+    &:focus {
+      border-bottom: 1px solid #436372;
+    }
   }
   &__list-link--plus::after {
     content: '+';
@@ -315,6 +323,7 @@
     margin: 5px -20px;
     padding: 40px 35px;
     position: relative;
+    cursor: pointer;
     &:hover {
       .products__buttons {
         z-index: 5;
@@ -329,37 +338,40 @@
     bottom: 150px;
     z-index: -5;
     }
-  }
   &__buttons-link {
     background-color: #ffffff;
     height: 46px;
     width: 46px;
     border-radius: 50px;
     margin: 0 5px;
-    cursor: pointer;
+    transition: all 0.3s;
     svg {
-      height: 45px;
+      height: 46px;
     }
+     &:hover {
+       path {
+         fill: white;
+       }
+       background-color: $button;
+     }
   }
-
   &__img {
     position: absolute;
     bottom: 37%
-  }
+    }
   &__name {
     @extend %DMSans-500;
     font-size: 16px;
     position: absolute;
     bottom: 30px;
-  }
+    }
   &__price {
     display: block;
     padding-top: 10px;
     color: $button;
     @extend %DMSans-700;
-  }
-
-
+    }
+}
 
 
 
