@@ -5,5 +5,10 @@ $(function (){
     fade: true
   });
 
+  $(".popup").fancybox({
+    openEffect: 'elastic',
+    closeEffect: 'elastic'
+  });
+
   var mixer = mixitup('.products__content');
 });
