@@ -199,11 +199,24 @@
 }
 
 .top-information {
+  position: relative;
   &__inner {
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: rgba(252, 215, 182, 0.2);
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      height: 174px;
+      width: 1px;
+      background-color: rgba(163, 187, 200, 0.1);
+      right: 35%;
+    }
+    &::before {
+      left: 35%;
+    }
   }
   &__item {
     padding: 35px 0 40px;
@@ -311,7 +324,6 @@
     padding: 40px 35px;
     position: relative;
     margin-bottom: -30px;
-    cursor: pointer;
     &:hover {
       .products__buttons-link {
         z-index: 5;
