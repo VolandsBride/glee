@@ -4,9 +4,9 @@ body {
 }
 
 body {
-  color: $default;
+  color: $darkblue;
   font-size: 16px;
-  background-color: #fcfcfc;
+  background-color: #ffffff;
   @extend %DMSans-400;
   display: flex;
   flex-direction: column;
@@ -28,5 +28,17 @@ body {
 .title {
   @extend %DMSans-700;
   font-size: 36px;
-  color: $title;
+  color: $title-black;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }

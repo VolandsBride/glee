@@ -1,44 +1,44 @@
-$default: #243f4d;
-$secondary: #262726;
-$title: #191919;
-$background: #fcd7b6;
-$footer-text: #7b7b7b;
-$button: #a3bbc8;
+$darkblue: #243f4d;
+$secondary-black: #262726;
+$title-black: #191919;
+$orange: #fcd7b6;
+$grey: #7b7b7b;
+$lightblue: #a3bbc8;
 
 %DMSans-400 {
-  font-family: 'DMSans-Regular', sans-serif;
+  font-family: 'DMSans', sans-serif;
   font-weight: 400;
 }
 
 %DMSans-500 {
-  font-family: 'DMSans-Medium', sans-serif;
+  font-family: 'DMSans', sans-serif;
   font-weight: 500;
 }
 
 %DMSans-700 {
-  font-family: 'DMSans-Bold', sans-serif;
+  font-family: 'DMSans', sans-serif;
   font-weight: 700;
 }
 
 %Rubik-400 {
-  font-family: 'Rubik-Regular', sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-weight: 400;
 }
 
 %Rubik-500 {
-  font-family: 'Rubik-Medium', sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-weight: 500;
 }
 
 %Rubik-700 {
-  font-family: 'Rubik-Bold', sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-weight: 700;
 }
 
 %btn {
   border: none;
   padding: 20px 100px 20px 26px;
-  background-color: $button;
+  background-color: $lightblue;
   color: white;
   @extend %Rubik-500;
   cursor: pointer;
