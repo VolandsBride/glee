@@ -314,16 +314,15 @@
   }
 }
 
-.products {
-  margin-top: 75px;
-  text-align: center;
+.filter {
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: center;
 
-  &__title {
-    margin-bottom: 30px;
-  }
-
-  &__links {
-    margin-bottom: 80px;
+  &__link {
+    &+& {
+      margin-left: 18px;
+    }
   }
 
   &__btn {
@@ -333,16 +332,27 @@
     color: #8b8b8b;
     transition: color 0.3s;
     cursor: pointer;
-    margin: 0 7px;
+
     &:hover {
       color: $title-black;
     }
+
     &:focus {
       color: $title-black;
     }
+
     &:active {
       color: $lightblue;
     }
+  }
+}
+
+.products {
+  margin-top: 75px;
+  text-align: center;
+
+  &__title {
+    margin-bottom: 30px;
   }
 
   &__content {
@@ -373,9 +383,8 @@
         z-index: 1;
       }
     }
-
   }
-
+  
   &__buttons {
     display: flex;
     justify-content: center;
@@ -506,6 +515,10 @@
     }
   }
 }
+
+
+
+  
 
 .footer {
   @extend %Rubik-400;

@@ -8,7 +8,7 @@ body, .footer-top__form {
   font-weight: 500;
 }
 
-.title, .top-information__title, .products__btn, .products__price, .products__block-title, .footer-top__title {
+.title, .top-information__title, .filter__btn, .products__price, .products__block-title, .footer-top__title {
   font-family: 'DMSans', sans-serif;
   font-weight: 700;
 }
@@ -909,6 +909,41 @@ body {
   line-height: 1.9;
 }
 
+.filter {
+  margin-bottom: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.filter__link + .filter__link {
+  margin-left: 18px;
+}
+
+.filter__btn {
+  border: none;
+  background-color: transparent;
+  color: #8b8b8b;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+.filter__btn:hover {
+  color: #191919;
+}
+
+.filter__btn:focus {
+  color: #191919;
+}
+
+.filter__btn:active {
+  color: #a3bbc8;
+}
+
 .products {
   margin-top: 75px;
   text-align: center;
@@ -916,32 +951,6 @@ body {
 
 .products__title {
   margin-bottom: 30px;
-}
-
-.products__links {
-  margin-bottom: 80px;
-}
-
-.products__btn {
-  border: none;
-  background-color: transparent;
-  color: #8b8b8b;
-  -webkit-transition: color 0.3s;
-  transition: color 0.3s;
-  cursor: pointer;
-  margin: 0 7px;
-}
-
-.products__btn:hover {
-  color: #191919;
-}
-
-.products__btn:focus {
-  color: #191919;
-}
-
-.products__btn:active {
-  color: #a3bbc8;
 }
 
 .products__content {
