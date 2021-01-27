@@ -524,12 +524,12 @@
   @extend %Rubik-400;
   color: $grey;
   font-size: 14px;
-}
 
-.footer-top {
+  &__items {
   padding: 80px 0 60px;
   border-bottom: 1px solid rgba(38, 39, 38, 0.4);
   display: flex;
+  }
 
   &__item {
     line-height: 1.8;
@@ -538,29 +538,12 @@
     margin-right: 30px;
   }
 
-  &__link {
-    transition: color 0.3s;
-    &:hover {
-      color: #15323f;
-    }
-
-    &:focus {
-      color: #436372;
-    }
-
-    &:active {
-      color: $lightblue;
-    }
-  }
-
   &__logo {
     margin-bottom: 25px;
     display: block;
   }
 
-  &__address-link {
-    display: block;
-    margin-bottom: 12px;
+  &__link {
     transition: color 0.3s;
     &:hover {
       color: #15323f;
@@ -569,7 +552,11 @@
       color: #436372;
     }
     &:active {
-      color: #000000;
+      color: $lightblue;
+    }
+    &--phone {
+      display: block;
+      margin: 12px 0;
     }
   }
 
@@ -586,11 +573,13 @@
     margin-bottom: 7px;
   }
 
-  &__newsletter {
+  &__item {
+    &--newsletter {
     margin-right: 0;
+    }
   }
 
-  &__form-text {
+  &__subscribe {
     margin-bottom: 30px;
   }
 
@@ -599,21 +588,21 @@
     display: flex;
   }
 
-  &__form-input {
+  &__input {
     background-color: rgba(252, 215, 182, 0.2);
     max-width: 170px;
     width: 100%;
     border: none;
     color: #234969;
-    padding: 9px 0 9px 15px;
+    padding: 9px 20px 10px 20px;
     &::placeholder {
       font-size: 12px;
     }
   }
 
-  &__form-btn {
+  &__btn {
     @extend %btn;
-    padding: 9px 18px;
+    padding: 9px 16px;
     color: #ffffff;
     transition: all 0.3s;
     &:hover {
@@ -625,27 +614,27 @@
       border: 1px solid $lightblue;
     }
   }
-}
 
-.footer-bottom {
-  display: flex;
-  justify-content: space-between;
-  margin: 35px 0 38px;
+  &__copy {
+    display: flex;
+    justify-content: space-between;
+    margin: 35px 0 35px;
+  }
 
-  &__list {
+  &__links {
     display: flex;
   }
 
-  &__item {
+  &__info {
     border-left: 1px solid;
   }
 
-  &__item:first-child {
+  &__info:first-child {
     border: none;
   }
   
-  &__link {
-    padding: 0 14px;
+  &__info-link {
+    padding: 0 14px 0;
     transition: color 0.3s;
     &:hover {
       color: #15323f;
@@ -660,10 +649,6 @@
       padding-right: 0;
     }
   }
-  
-  &__wrapper {
-    display: flex;
-    justify-content: space-between;
-  }
+
 }
 
