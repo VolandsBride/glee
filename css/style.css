@@ -631,6 +631,11 @@ body {
   position: relative;
 }
 
+.user-nav__link path {
+  -webkit-transition: fill 0.3s;
+  transition: fill 0.3s;
+}
+
 .user-nav__link + .user-nav__link {
   margin-left: 50px;
 }
@@ -645,20 +650,30 @@ body {
           justify-content: center;
 }
 
+.user-nav__link:hover path {
+  fill: #00509b;
+}
+
+.user-nav__link:focus path {
+  fill: #ffffff;
+}
+
+.user-nav__link:active path {
+  fill: #000000;
+}
+
 .user-nav__link--menu {
   background-color: #a3bbc8;
   height: 50px;
   width: 50px;
   border-radius: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
 .user-nav__wrapper {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -672,12 +687,14 @@ body {
   border-radius: 25px;
 }
 
-.user-nav__border {
+.user-nav__wrapper::after {
+  position: absolute;
+  content: '';
   position: absolute;
   border-right: 1px solid #fde7d3;
   bottom: 10px;
   top: 10px;
-  left: 48px;
+  left: 50%;
 }
 
 .user-nav__num {
@@ -747,7 +764,7 @@ body {
 }
 
 .top-slider__link:hover {
-  background-color: white;
+  background-color: #ffffff;
   color: #a3bbc8;
   padding-left: 100px;
 }
@@ -766,7 +783,7 @@ body {
   padding: 0;
   color: #667983;
   font-size: 10px;
-  line-height: 3;
+  line-height: 2.5;
   background-color: rgba(255, 255, 255, 0.3);
   width: 28px;
   height: 28px;
@@ -780,6 +797,11 @@ body {
 .top-slider .slick-dots button:hover {
   background-color: #ffffff;
   color: #243f4d;
+}
+
+.top-slider .slick-dots button:focus {
+  background-color: #243f4d;
+  color: #ffffff;
 }
 
 .top-slider .slick-dots .slick-active button {
@@ -870,7 +892,7 @@ body {
   width: 20px;
   border-radius: 50%;
   right: -6px;
-  bottom: 32px;
+  bottom: 34px;
   background-color: rgba(163, 187, 200, 0.3);
 }
 
@@ -916,6 +938,10 @@ body {
 
 .products__btn:focus {
   color: #191919;
+}
+
+.products__btn:active {
+  color: #a3bbc8;
 }
 
 .products__content {
@@ -994,7 +1020,23 @@ body {
 }
 
 .products__buttons-link:hover path {
-  fill: white;
+  fill: #ffffff;
+}
+
+.products__buttons-link:active {
+  background-color: #a3bbc8;
+}
+
+.products__buttons-link:active path {
+  fill: #ffffff;
+}
+
+.products__buttons-link:focus {
+  background-color: #ffffff;
+}
+
+.products__buttons-link:focus path {
+  fill: #a3bbc8;
 }
 
 .products__img {
@@ -1109,6 +1151,23 @@ body {
   margin-right: 30px;
 }
 
+.footer-top__link {
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.footer-top__link:hover {
+  color: #15323f;
+}
+
+.footer-top__link:focus {
+  color: #436372;
+}
+
+.footer-top__link:active {
+  color: #a3bbc8;
+}
+
 .footer-top__logo {
   margin-bottom: 25px;
   display: block;
@@ -1117,6 +1176,20 @@ body {
 .footer-top__address-link {
   display: block;
   margin-bottom: 12px;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.footer-top__address-link:hover {
+  color: #15323f;
+}
+
+.footer-top__address-link:focus {
+  color: #436372;
+}
+
+.footer-top__address-link:active {
+  color: #000000;
 }
 
 .footer-top__title {
@@ -1172,7 +1245,19 @@ body {
 
 .footer-top__form-btn {
   padding: 9px 18px;
-  color: white;
+  color: #ffffff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.footer-top__form-btn:hover {
+  color: #fcd7b6;
+}
+
+.footer-top__form-btn:active {
+  color: #a3bbc8;
+  background-color: #ffffff;
+  border: 1px solid #a3bbc8;
 }
 
 .footer-bottom {
@@ -1201,6 +1286,20 @@ body {
 
 .footer-bottom__link {
   padding: 0 14px;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.footer-bottom__link:hover {
+  color: #15323f;
+}
+
+.footer-bottom__link:focus {
+  color: #436372;
+}
+
+.footer-bottom__link:active {
+  color: #a3bbc8;
 }
 
 .footer-bottom__link--contact {
