@@ -51,6 +51,7 @@
   &__nav {
   display: flex;
   }
+
   &__nav-link {
     display: flex;
     align-items: center;
@@ -404,24 +405,32 @@
       height: 46px;
     }
     &:hover {
-      path {
-        fill: #ffffff;
-        } 
-      background-color: $lightblue;
-      }
-    &:active {
-      path {
-        fill: #ffffff;
+      svg {
+        path {
+          fill: #ffffff;
         }
+      } 
       background-color: $lightblue;
-      }
-    &:focus {
-      path {
-        fill: $lightblue;
-        }
-        background-color: #ffffff;
-      }
     }
+
+    &:active {
+      svg {
+        path {
+          fill: #ffffff;
+        }
+      }
+      background-color: $lightblue;
+    }
+
+    &:focus {
+      svg {
+        path {
+          fill: #ffffff;
+        }
+      }
+      background-color: $lightblue;
+    }
+  }
 
   &__img {
     position: absolute;
@@ -512,8 +521,6 @@
     }
   }
 }
-
-
 
 .footer {
   @extend %Rubik-400;
@@ -644,6 +651,5 @@
       padding-right: 0;
     }
   }
-
 }
 

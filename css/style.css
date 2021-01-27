@@ -1029,7 +1029,7 @@ body {
   background-color: #a3bbc8;
 }
 
-.products__buttons-link:hover path {
+.products__buttons-link:hover svg path {
   fill: #ffffff;
 }
 
@@ -1037,16 +1037,16 @@ body {
   background-color: #a3bbc8;
 }
 
-.products__buttons-link:active path {
+.products__buttons-link:active svg path {
   fill: #ffffff;
 }
 
 .products__buttons-link:focus {
-  background-color: #ffffff;
+  background-color: #a3bbc8;
 }
 
-.products__buttons-link:focus path {
-  fill: #a3bbc8;
+.products__buttons-link:focus svg path {
+  fill: #ffffff;
 }
 
 .products__img {
