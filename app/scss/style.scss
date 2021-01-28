@@ -178,10 +178,12 @@
     &:focus {
       color: $orange;
       background-color: $lightblue;
+      background-image: none;
     }
     &:active {
       color: #ffffff;
       background-color: $lightblue;
+      background-image: none;
     }
   }
 }
@@ -606,9 +608,11 @@
       color: $orange;
     }
     &:active {
-      color: $lightblue;
       background-color: #ffffff;
       border: 1px solid $lightblue;
+    }
+    &:focus {
+      color: $lightblue;
     }
   }
 }

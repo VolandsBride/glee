@@ -772,11 +772,13 @@ body {
 .top-slider .button--slider:focus {
   color: #fcd7b6;
   background-color: #a3bbc8;
+  background-image: none;
 }
 
 .top-slider .button--slider:active {
   color: #ffffff;
   background-color: #a3bbc8;
+  background-image: none;
 }
 
 .top-slider .slick-dots {
@@ -1265,9 +1267,12 @@ body {
 }
 
 .footer .button--footer:active {
-  color: #a3bbc8;
   background-color: #ffffff;
   border: 1px solid #a3bbc8;
+}
+
+.footer .button--footer:focus {
+  color: #a3bbc8;
 }
 
 .footer__copy {
