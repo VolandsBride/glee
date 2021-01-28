@@ -960,7 +960,7 @@ body {
 }
 
 .products__title {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .products__content {
@@ -1076,7 +1076,7 @@ body {
   color: #a3bbc8;
 }
 
-.products__block {
+.products__blocks {
   margin-top: 180px;
 }
 
@@ -1115,7 +1115,7 @@ body {
   margin-left: 380px;
 }
 
-.products--right {
+.products__block-text--right {
   margin-left: 430px;
 }
 

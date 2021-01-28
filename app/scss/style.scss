@@ -327,15 +327,12 @@
     color: #8b8b8b;
     transition: color 0.3s;
     cursor: pointer;
-
     &:hover {
       color: $title-black;
     }
-
     &:focus {
       color: $title-black;
     }
-
     &:active {
       color: $lightblue;
     }
@@ -346,7 +343,7 @@
   margin-top: 75px;
   text-align: center;
   &__title {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
   }
 
   &__content {
@@ -446,7 +443,7 @@
     @extend %DMSans-700;
   }
 
-  &__block {
+  &__blocks {
     margin-top: 180px;
   }
   
@@ -462,6 +459,7 @@
     width: 100%;
     height: 390px;
     background-color: rgba(252, 215, 182, 0.4);
+    
   }
 
   &__block-img {
@@ -477,10 +475,9 @@
     padding-top: 80px;
     color: $darkblue;
     margin-left: 380px;
-  }
-
-  &--right {
-    margin-left: 430px;
+    &--right {
+      margin-left: 430px;
+    }
   }
   
   &__block-title {
