@@ -37,9 +37,9 @@ body {
   padding: 20px 100px 20px 26px;
   background-repeat: no-repeat;
   background-position: 86%;
+  @extend %Rubik-500;
   color: white;
   text-decoration: none;
-  @extend %Rubik-500;
   cursor: pointer;
   transition: all 0.3s;
 }
