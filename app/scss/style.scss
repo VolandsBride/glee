@@ -167,22 +167,20 @@
     margin-top: 100px;
   }
 
-  &__link {
-    @extend %btn;
+  .button {
+    &--slider{
     display: inline-block;
     font-size: 16px;
     line-height: 1.6;
-    text-decoration: none;
+    background-color: $lightblue;
     background-image: url('../images/arrow-white.svg');
-    background-repeat: no-repeat;
-    background-position: 86%;
-    transition: all 0.3s;
     &:hover {
       background-color: #ffffff;
       color: $lightblue;
       padding-left: 100px;
     }
   }
+}
 
   .slick-dots {
     display: flex;
@@ -500,24 +498,21 @@
     margin-bottom: 30px;
   }
 
-  &__block-btn {
-    display: block;
-    width: 180px;
-    height: 60px;
-    @extend %btn;
-    color: #436372;
-    background-color: transparent;
-    border: 1px solid #436372;
-    border-radius: 5px;
-    background-image: url('../images/arrow-blue.svg');
-    background-repeat: no-repeat;
-    background-position: 86%;
-    transition: all 0.3s;
-    padding: 19px 0 19px 18px;
-    &:hover {
-      background-color: #436372;
-      color: $orange;
-      padding-left: 47px;  
+  .button {
+    &--blocks {
+      width: 180px;
+      height: 60px;
+      color: #436372;
+      background-color: transparent;
+      border: 1px solid #436372;
+      border-radius: 5px;
+      padding: 19px 0 19px 18px;
+      background-image: url('../images/arrow-blue.svg');
+      &:hover {
+        background-color: #436372;
+        color: $orange;
+        padding-left: 47px;  
+      }
     }
   }
 }
@@ -602,11 +597,12 @@
     }
   }
 
-  &__btn {
-    @extend %btn;
+  .button {
+    &--footer {
     padding: 9px 16px;
     color: #ffffff;
     transition: all 0.3s;
+    background-color: $lightblue;
     &:hover {
       color: $orange;
     }
@@ -616,6 +612,7 @@
       border: 1px solid $lightblue;
     }
   }
+}
 
   &__copy {
     display: flex;

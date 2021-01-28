@@ -18,17 +18,9 @@ body, .footer__form {
   font-weight: 400;
 }
 
-.top-slider__link, .products__block-btn, .footer__btn, .header__link, .top-slider__title, .top-slider .slick-dots button {
+.button, .header__link, .top-slider__title, .top-slider .slick-dots button {
   font-family: 'Rubik', sans-serif;
   font-weight: 500;
-}
-
-.top-slider__link, .products__block-btn, .footer__btn {
-  border: none;
-  padding: 20px 100px 20px 26px;
-  background-color: #a3bbc8;
-  color: white;
-  cursor: pointer;
 }
 
 @font-face {
@@ -543,6 +535,19 @@ body {
   color: #191919;
 }
 
+.button {
+  display: block;
+  border: none;
+  padding: 20px 100px 20px 26px;
+  background-repeat: no-repeat;
+  background-position: 86%;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -751,19 +756,15 @@ body {
   margin-top: 100px;
 }
 
-.top-slider__link {
+.top-slider .button--slider {
   display: inline-block;
   font-size: 16px;
   line-height: 1.6;
-  text-decoration: none;
+  background-color: #a3bbc8;
   background-image: url("../images/arrow-white.svg");
-  background-repeat: no-repeat;
-  background-position: 86%;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
 }
 
-.top-slider__link:hover {
+.top-slider .button--slider:hover {
   background-color: #ffffff;
   color: #a3bbc8;
   padding-left: 100px;
@@ -1119,23 +1120,18 @@ body {
   margin-bottom: 30px;
 }
 
-.products__block-btn {
-  display: block;
+.products .button--blocks {
   width: 180px;
   height: 60px;
   color: #436372;
   background-color: transparent;
   border: 1px solid #436372;
   border-radius: 5px;
-  background-image: url("../images/arrow-blue.svg");
-  background-repeat: no-repeat;
-  background-position: 86%;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
   padding: 19px 0 19px 18px;
+  background-image: url("../images/arrow-blue.svg");
 }
 
-.products__block-btn:hover {
+.products .button--blocks:hover {
   background-color: #436372;
   color: #fcd7b6;
   padding-left: 47px;
@@ -1239,18 +1235,19 @@ body {
   font-size: 12px;
 }
 
-.footer__btn {
+.footer .button--footer {
   padding: 9px 16px;
   color: #ffffff;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  background-color: #a3bbc8;
 }
 
-.footer__btn:hover {
+.footer .button--footer:hover {
   color: #fcd7b6;
 }
 
-.footer__btn:active {
+.footer .button--footer:active {
   color: #a3bbc8;
   background-color: #ffffff;
   border: 1px solid #a3bbc8;
