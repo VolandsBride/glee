@@ -31,6 +31,19 @@ body {
   color: $title-black;
 }
 
+.button {
+  display: block;
+  border: none;
+  padding: 20px 100px 20px 26px;
+  background-repeat: no-repeat;
+  background-position: 86%;
+  @extend %Rubik-500;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
