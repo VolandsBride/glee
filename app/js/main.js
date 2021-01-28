@@ -10,5 +10,14 @@ $(function (){
     closeEffect: 'elastic'
   });
 
-  var mixer = mixitup('.products__content');
+  var mixer1 = mixitup('.products__content', {
+    selectors: {
+      control: '.filter__btn'
+    }
+  });
+  var mixer2 = mixitup('.design__content', {
+    selectors: {
+      control: '.filter__btn-design'
+    }
+  });
 });
