@@ -8,7 +8,7 @@ body, .footer__form {
   font-weight: 500;
 }
 
-.title, .top-information__title, .filter__btn, .products__price, .products__block-title, .footer__title {
+.title, .top-information__title, .filter__btn, .products__price, .products__block-title, .design .filter__btn-design, .design__name, .footer__title {
   font-family: 'DMSans', sans-serif;
   font-weight: 700;
 }
@@ -957,7 +957,7 @@ body {
 }
 
 .products {
-  margin-top: 75px;
+  margin: 75px 0 100px;
   text-align: center;
 }
 
@@ -1154,6 +1154,65 @@ body {
 
 .products .button--blocks:active {
   color: #a3bbc8;
+}
+
+.design {
+  margin-bottom: 120px;
+}
+
+.design__title {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.design .filter__btn-design {
+  border: none;
+  background-color: transparent;
+  color: #8b8b8b;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+.design .filter__btn-design:hover {
+  color: #191919;
+}
+
+.design .filter__btn-design:focus {
+  color: #191919;
+}
+
+.design .filter__btn-design:active {
+  color: #a3bbc8;
+}
+
+.design__content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+}
+
+.design__item {
+  position: relative;
+}
+
+.design__name {
+  position: absolute;
+  top: 37px;
+  left: 35px;
+  font-size: 20px;
+  color: #191919;
+  max-width: 200px;
+  width: 100%;
+}
+
+.design__type {
+  color: #a3bbc8;
+  font-size: 16px;
+  display: block;
+  padding-top: 12px;
 }
 
 .footer {
