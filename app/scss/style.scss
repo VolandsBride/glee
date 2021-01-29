@@ -342,7 +342,7 @@
 }
 
 .products {
-  margin: 75px 0 110px;
+  margin: 75px 0 100px;
   text-align: center;
   &__title {
     margin-bottom: 25px;
@@ -534,15 +534,12 @@
       color: #8b8b8b;
       transition: color 0.3s;
       cursor: pointer;
-
       &:hover {
         color: $title-black;
       }
-
       &:focus {
         color: $title-black;
       }
-
       &:active {
         color: $lightblue;
       }
