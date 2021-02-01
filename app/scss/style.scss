@@ -28,18 +28,7 @@
   &__link {
     font-size: 15px;
     color: #436372;
-    border-bottom: 1px solid transparent;
     @extend %Rubik-500;
-    transition: all 0.3s;
-    &:hover {
-      color: #15323f;
-    }
-    &:focus {
-      border-bottom: 1px solid #436372;
-    }
-    &:active {
-      color: $lightblue;
-    }
     &--plus::after {
       content: '+';
       height: 8px;
@@ -327,17 +316,6 @@
     background-color: transparent;
     @extend %DMSans-700;
     color: #8b8b8b;
-    transition: color 0.3s;
-    cursor: pointer;
-    &:hover {
-      color: $title-black;
-    }
-    &:focus {
-      color: $title-black;
-    }
-    &:active {
-      color: $lightblue;
-    }
   }
 }
 
@@ -524,26 +502,6 @@
   &__title {
     text-align: center;
     margin-bottom: 25px;
-  }
-
-  .filter {
-    &__btn-design {
-      border: none;
-      background-color: transparent;
-      @extend %DMSans-700;
-      color: #8b8b8b;
-      transition: color 0.3s;
-      cursor: pointer;
-      &:hover {
-        color: $title-black;
-      }
-      &:focus {
-        color: $title-black;
-      }
-      &:active {
-        color: $lightblue;
-      }
-    }
   }
 
   &__content {

@@ -8,7 +8,7 @@ body, .footer__form {
   font-weight: 500;
 }
 
-.title, .top-information__title, .filter__btn, .products__price, .products__block-title, .design .filter__btn-design, .design__name, .footer__title {
+.title, .links-effects, .top-information__title, .filter__btn, .products__price, .products__block-title, .design__name, .footer__title {
   font-family: 'DMSans', sans-serif;
   font-weight: 700;
 }
@@ -535,6 +535,27 @@ body {
   color: #191919;
 }
 
+.links-effects {
+  border: none;
+  background-color: transparent;
+  color: #8b8b8b;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+.links-effects:hover {
+  color: #191919;
+}
+
+.links-effects:focus {
+  color: #191919;
+}
+
+.links-effects:active {
+  color: #a3bbc8;
+}
+
 .button {
   display: block;
   border: none;
@@ -596,21 +617,6 @@ body {
 .header__link {
   font-size: 15px;
   color: #436372;
-  border-bottom: 1px solid transparent;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-.header__link:hover {
-  color: #15323f;
-}
-
-.header__link:focus {
-  border-bottom: 1px solid #436372;
-}
-
-.header__link:active {
-  color: #a3bbc8;
 }
 
 .header__link--plus::after {
@@ -939,21 +945,6 @@ body {
   border: none;
   background-color: transparent;
   color: #8b8b8b;
-  -webkit-transition: color 0.3s;
-  transition: color 0.3s;
-  cursor: pointer;
-}
-
-.filter__btn:hover {
-  color: #191919;
-}
-
-.filter__btn:focus {
-  color: #191919;
-}
-
-.filter__btn:active {
-  color: #a3bbc8;
 }
 
 .products {
@@ -1163,27 +1154,6 @@ body {
 .design__title {
   text-align: center;
   margin-bottom: 25px;
-}
-
-.design .filter__btn-design {
-  border: none;
-  background-color: transparent;
-  color: #8b8b8b;
-  -webkit-transition: color 0.3s;
-  transition: color 0.3s;
-  cursor: pointer;
-}
-
-.design .filter__btn-design:hover {
-  color: #191919;
-}
-
-.design .filter__btn-design:focus {
-  color: #191919;
-}
-
-.design .filter__btn-design:active {
-  color: #a3bbc8;
 }
 
 .design__content {

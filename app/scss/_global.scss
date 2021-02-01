@@ -31,6 +31,26 @@ body {
   color: $title-black;
 }
 
+.links-effects {
+  border: none;
+  background-color: transparent;
+  @extend %DMSans-700;
+  color: #8b8b8b;
+  transition: color 0.3s;
+  cursor: pointer;
+  &:hover {
+    color: $title-black;
+  }
+
+  &:focus {
+    color: $title-black;
+  }
+
+  &:active {
+    color: $lightblue;
+  }
+}
+
 .button {
   display: block;
   border: none;
