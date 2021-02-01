@@ -126,11 +126,10 @@
     display: flex;
     justify-content: center;
     padding-bottom: 10px;
-    margin-left: 100px;
   }
 
   &__title {
-    max-width: 500px;
+    max-width: 520px;
     width: 100%;
     font-size: 72px;
     line-height: 1.1;
@@ -149,7 +148,17 @@
   }
 
   &__img {
-    margin-top: 100px;
+    max-width: 640px;
+    width: 100%;
+    margin: 270px 0 200px;
+    position: relative;
+  }
+
+  &__bg {
+    position: absolute;
+    bottom: 20px;
+    right: 190px;
+    z-index: -1;
   }
 
   .button {
@@ -194,6 +203,7 @@
       border-radius: 50%;
       cursor: pointer;
       transition: all 0.3s;
+      outline: transparent;
       &:hover {
         background-color: #ffffff;
         color: $darkblue;
