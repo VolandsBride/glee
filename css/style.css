@@ -1210,23 +1210,6 @@ body {
   display: block;
 }
 
-.footer__link {
-  -webkit-transition: color 0.3s;
-  transition: color 0.3s;
-}
-
-.footer__link:hover {
-  color: #15323f;
-}
-
-.footer__link:focus {
-  color: #436372;
-}
-
-.footer__link:active {
-  color: #a3bbc8;
-}
-
 .footer__link--phone {
   display: block;
   margin: 12px 0;
@@ -1330,20 +1313,6 @@ body {
 
 .footer__info-link {
   padding: 0 14px 0;
-  -webkit-transition: color 0.3s;
-  transition: color 0.3s;
-}
-
-.footer__info-link:hover {
-  color: #15323f;
-}
-
-.footer__info-link:focus {
-  color: #436372;
-}
-
-.footer__info-link:active {
-  color: #a3bbc8;
 }
 
 .footer__info-link--contact {

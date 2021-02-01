@@ -556,16 +556,6 @@
   }
 
   &__link {
-    transition: color 0.3s;
-    &:hover {
-      color: #15323f;
-    }
-    &:focus {
-      color: #436372;
-    }
-    &:active {
-      color: $lightblue;
-    }
     &--phone {
       display: block;
       margin: 12px 0;
@@ -651,16 +641,6 @@
   
   &__info-link {
     padding: 0 14px 0;
-    transition: color 0.3s;
-    &:hover {
-      color: #15323f;
-    }
-    &:focus {
-      color: #436372;
-    }
-    &:active {
-      color: $lightblue;
-    } 
     &--contact {
       padding-right: 0;
     }
