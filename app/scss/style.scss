@@ -602,25 +602,6 @@
     }
   }
 
-  .button {
-    &--footer {
-    padding: 9px 16px;
-    color: #ffffff;
-    transition: all 0.3s;
-    background-color: $lightblue;
-    &:hover {
-      color: $orange;
-    }
-    &:active {
-      background-color: #ffffff;
-      border: 1px solid $lightblue;
-    }
-    &:focus {
-      color: $lightblue;
-    }
-  }
-}
-
   &__copy {
     display: flex;
     justify-content: space-between;
