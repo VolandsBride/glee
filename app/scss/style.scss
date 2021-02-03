@@ -303,24 +303,6 @@
   }
 }
 
-.filter {
-  margin-bottom: 80px;
-  display: flex;
-  justify-content: center;
-  &__link {
-    &+& {
-      margin-left: 18px;
-    }
-  }
-
-  &__btn {
-    border: none;
-    background-color: transparent;
-    @extend %DMSans-700;
-    color: #8b8b8b;
-  }
-}
-
 .products {
   margin: 75px 0 100px;
   text-align: center;
@@ -332,9 +314,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 30px;
-  }
-
-  &__items {
     margin-bottom: 40px;
   }
 

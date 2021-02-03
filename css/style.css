@@ -8,7 +8,7 @@ body, .footer__form {
   font-weight: 500;
 }
 
-.title, .links-effects, .top-information__title, .filter__btn, .products__price, .products__block-title, .design__name, .footer__title {
+.title, .filter__btn, .links-effects, .top-information__title, .products__price, .products__block-title, .design__name, .footer__title {
   font-family: 'DMSans', sans-serif;
   font-weight: 700;
 }
@@ -536,6 +536,26 @@ body {
   color: #191919;
 }
 
+.filter {
+  margin-bottom: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.filter__link + .filter__link {
+  margin-left: 18px;
+}
+
+.filter__btn {
+  border: none;
+  background-color: transparent;
+  color: #8b8b8b;
+}
+
 .links-effects {
   border: none;
   background-color: transparent;
@@ -945,26 +965,6 @@ body {
   line-height: 1.9;
 }
 
-.filter {
-  margin-bottom: 80px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.filter__link + .filter__link {
-  margin-left: 18px;
-}
-
-.filter__btn {
-  border: none;
-  background-color: transparent;
-  color: #8b8b8b;
-}
-
 .products {
   margin: 75px 0 100px;
   text-align: center;
@@ -980,9 +980,6 @@ body {
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 30px;
-}
-
-.products__items {
   margin-bottom: 40px;
 }
 
