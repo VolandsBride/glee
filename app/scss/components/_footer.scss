@@ -1,0 +1,96 @@
+.footer {
+  color: $grey;
+
+  &__items {
+    padding: 80px 0 60px;
+    border-bottom: 1px solid rgba(38, 39, 38, 0.4);
+    display: flex;
+  }
+
+  &__item {
+    line-height: 1.8;
+    max-width: 270px;
+    width: 100%;
+    margin-right: 30px;
+  }
+
+  &__logo {
+    margin-bottom: 25px;
+    display: block;
+  }
+
+  &__link {
+    display: block;
+    margin: 12px 0;
+    @extend %Rubik-400;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  &__title {
+    @extend %DMSans-700;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding-top: 14px;
+    margin-bottom: 20px;
+    color: $secondary-black;
+  }
+
+  &__text {
+    margin-bottom: 7px;
+  }
+
+  &__item {
+    &--newsletter {
+      margin-right: 0;
+    }
+  }
+
+  &__subscribe {
+    margin-bottom: 30px;
+  }
+
+  &__form {
+    display: flex;
+  }
+
+  &__input {
+    background-color: rgba(252, 215, 182, 0.2);
+    max-width: 170px;
+    width: 100%;
+    border: none;
+    color: #234969;
+    padding: 9px 20px 10px 20px;
+
+    &::placeholder {
+      font-size: 12px;
+    }
+  }
+
+  &__copy {
+    display: flex;
+    justify-content: space-between;
+    margin: 35px 0 35px;
+  }
+
+  &__links {
+    display: flex;
+  }
+
+  &__info {
+    border-left: 1px solid;
+
+    &:first-child {
+      border: none;
+    }
+
+    &:last-child {
+      margin-right: -10px;
+    }
+  }
+
+  &__info-link {
+    padding: 0 14px 0;
+    font-weight: 400;
+  }
+}

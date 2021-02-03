@@ -32,142 +32,6 @@ body {
   color: $title-black;
 }
 
-.filter {
-  margin-bottom: 80px;
-  display: flex;
-  justify-content: center;
-
-  &__link {
-    &+& {
-      margin-left: 18px;
-    }
-  }
-
-  &__btn {
-    border: none;
-    background-color: transparent;
-    @extend %DMSans-700;
-    color: #8b8b8b;
-  }
-}
-
-.links-effects {
-  border: none;
-  background-color: transparent;
-  @extend %DMSans-700;
-  color: #8b8b8b;
-  transition: color 0.3s;
-  outline: transparent;
-  cursor: pointer;
-  &:hover {
-    color: $title-black;
-  }
-  &:focus {
-    color: $title-black;
-  }
-  &:active {
-    color: $lightblue;
-  }
-}
-
-.cards {
-  max-width: 270px;
-  height: 380px;
-  background-color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
-  padding: 40px 35px;
-  position: relative;
-  margin-bottom: 10px;
-
-  &:hover {
-    .cards__buttons-link {
-      opacity: 1;
-      z-index: 1;
-    }
-  }
-
-  &__buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    bottom: 150px;
-  }
-
-  &__buttons-link {
-    background-color: #ffffff;
-    height: 46px;
-    width: 46px;
-    border-radius: 50px;
-    border: none;
-    cursor: pointer;
-    margin: 0 5px;
-    transition: all 0.3s;
-    opacity: 0;
-    outline: none;
-
-    svg {
-      height: 46px;
-    }
-
-    &:hover {
-      svg {
-        path {
-          fill: #ffffff;
-        }
-      }
-
-      background-color: $lightblue;
-    }
-
-    &:active {
-      svg {
-        path {
-          fill: #ffffff;
-        }
-      }
-
-      background-color: $lightblue;
-    }
-
-    &:focus {
-      svg {
-        path {
-          fill: #ffffff;
-        }
-      }
-
-      background-color: $lightblue;
-    }
-  }
-
-  &__img {
-    position: absolute;
-    bottom: 150px;
-  }
-
-  &__text {
-    display: flex;
-    flex-direction: column;
-    margin-top: auto;
-  }
-
-  &__name {
-    @extend %DMSans-500;
-    font-size: 16px;
-  }
-
-  &__price {
-    display: block;
-    padding-top: 10px;
-    color: $lightblue;
-    @extend %DMSans-700;
-  }
-}
 
 .special {
   margin-top: 180px;
@@ -184,7 +48,6 @@ body {
     width: 100%;
     height: 390px;
     background-color: rgba(252, 215, 182, 0.4);
-
   }
 
   &__block-img {
@@ -199,11 +62,7 @@ body {
     text-align: left;
     padding-top: 80px;
     color: $darkblue;
-    margin-left: 380px;
-
-    &--right {
-      margin-left: 430px;
-    }
+    margin-left: 400px;
   }
 
   &__block-title {
@@ -217,62 +76,6 @@ body {
     line-height: 2;
     margin-bottom: 30px;
   }
-
-  .button {
-    &--blocks {
-      width: 180px;
-      height: 60px;
-      color: #436372;
-      background-color: transparent;
-      border: 1px solid #436372;
-      border-radius: 5px;
-      padding: 19px 0 19px 18px;
-      background-image: url('../images/arrow-blue.svg');
-
-      &:hover {
-        background-color: #436372;
-        color: $orange;
-        padding-left: 47px;
-      }
-
-      &:focus {
-        color: #000000;
-      }
-
-      &:active {
-        color: $lightblue;
-      }
-    }
-  }
-}
-
-.button {
-  display: block;
-  border: none;
-  padding: 20px 100px 20px 26px;
-  background-repeat: no-repeat;
-  background-position: 86%;
-  @extend %Rubik-500;
-  color: white;
-  text-decoration: none;
-  cursor: pointer;
-  transition: all 0.3s;
-  &--footer {
-    padding: 9px 16px;
-    color: #ffffff;
-    transition: all 0.3s;
-    background-color: $lightblue;
-    &:hover {
-      color: $orange;
-    }
-    &:active {
-      background-color: #ffffff;
-      border: 1px solid $lightblue;
-    }
-    &:focus {
-      color: $lightblue;
-    }
-}
 }
 
 .sr-only {
