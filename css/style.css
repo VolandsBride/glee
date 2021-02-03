@@ -3,12 +3,12 @@ body, .footer__form {
   font-weight: 400;
 }
 
-.products__name {
+.cards__name {
   font-family: 'DMSans', sans-serif;
   font-weight: 500;
 }
 
-.title, .filter__btn, .links-effects, .top-information__title, .products__price, .products__block-title, .design__name, .footer__title {
+.title, .filter__btn, .links-effects, .cards__price, .top-information__title, .products__block-title, .design__name, .footer__title {
   font-family: 'DMSans', sans-serif;
   font-weight: 700;
 }
@@ -578,6 +578,116 @@ body {
   color: #a3bbc8;
 }
 
+.cards {
+  max-width: 270px;
+  height: 380px;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+          box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+  padding: 40px 35px;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.cards:hover .cards__buttons-link {
+  opacity: 1;
+  z-index: 1;
+}
+
+.cards__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  bottom: 150px;
+}
+
+.cards__buttons-link {
+  background-color: #ffffff;
+  height: 46px;
+  width: 46px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  margin: 0 5px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  opacity: 0;
+  outline: none;
+}
+
+.cards__buttons-link svg {
+  height: 46px;
+}
+
+.cards__buttons-link:hover {
+  background-color: #a3bbc8;
+}
+
+.cards__buttons-link:hover svg path {
+  fill: #ffffff;
+}
+
+.cards__buttons-link:active {
+  background-color: #a3bbc8;
+}
+
+.cards__buttons-link:active svg path {
+  fill: #ffffff;
+}
+
+.cards__buttons-link:focus {
+  background-color: #a3bbc8;
+}
+
+.cards__buttons-link:focus svg path {
+  fill: #ffffff;
+}
+
+.cards__img {
+  position: absolute;
+  bottom: 150px;
+}
+
+.cards__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: auto;
+}
+
+.cards__name {
+  font-size: 16px;
+}
+
+.cards__price {
+  display: block;
+  padding-top: 10px;
+  color: #a3bbc8;
+}
+
 .button {
   display: block;
   border: none;
@@ -980,108 +1090,6 @@ body {
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 30px;
-  margin-bottom: 40px;
-}
-
-.products__item {
-  max-width: 270px;
-  height: 380px;
-  background-color: #ffffff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
-          box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
-  padding: 40px 35px;
-  position: relative;
-  margin-bottom: -30px;
-}
-
-.products__item:hover .products__buttons-link {
-  opacity: 1;
-  z-index: 1;
-}
-
-.products__buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: absolute;
-  bottom: 150px;
-}
-
-.products__buttons-link {
-  background-color: #ffffff;
-  height: 46px;
-  width: 46px;
-  border-radius: 50px;
-  border: none;
-  cursor: pointer;
-  margin: 0 5px;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  opacity: 0;
-  outline: none;
-}
-
-.products__buttons-link svg {
-  height: 46px;
-}
-
-.products__buttons-link:hover {
-  background-color: #a3bbc8;
-}
-
-.products__buttons-link:hover svg path {
-  fill: #ffffff;
-}
-
-.products__buttons-link:active {
-  background-color: #a3bbc8;
-}
-
-.products__buttons-link:active svg path {
-  fill: #ffffff;
-}
-
-.products__buttons-link:focus {
-  background-color: #a3bbc8;
-}
-
-.products__buttons-link:focus svg path {
-  fill: #ffffff;
-}
-
-.products__img {
-  position: absolute;
-  bottom: 37%;
-}
-
-.products__name {
-  font-size: 16px;
-  position: absolute;
-  bottom: 30px;
-}
-
-.products__price {
-  display: block;
-  padding-top: 10px;
-  color: #a3bbc8;
 }
 
 .products__blocks {
