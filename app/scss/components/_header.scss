@@ -1,36 +1,39 @@
 .header {
   padding: 48px 0 45px;
+
   &__wrapper {
     display: flex;
     justify-content: space-between;
   }
 
-  &__menu {
+  .menu {
     display: flex;
     align-items: center;
-    margin-left: 105px;
-  }
+    padding-left: 110px;
 
-  &__list {
-    display: flex;
-  }
+    &__list {
+      display: flex;
+    }
 
-  &__item {
-    margin-left: 35px;
-  }
+    &__item {
+      &:not(:last-child) {
+        margin-right: 35px;
+      }
+    }
 
-  &__link {
-    font-size: 15px;
-    color: #436372;
-    @extend %Rubik-500;
-    &--plus::after {
-      content: '+';
-      height: 8px;
-      width: 8px;
-      margin-left: 4px;
+    &__link {
+      font-size: 15px;
+      color: #436372;
+      @extend %Rubik-500;
+      &--plus::after {
+        content: '+';
+        height: 8px;
+        width: 8px;
+        margin-left: 4px;
+      }
     }
   }
-
+  
   &__nav {
     display: flex;
     path {
@@ -45,6 +48,7 @@
     border-radius: 50px;
     justify-content: center;
   }
+
   &__nav-menu {
     background-color: #a3bbc8;
     height: 50px;
@@ -56,9 +60,6 @@
   &__nav-link {
     display: flex;
     align-items: center;
-    &+& {
-      margin-left: 50px;
-    }
     &:hover {
       path {
         fill: $orange;
@@ -83,7 +84,7 @@
     margin: 0 20px;
     background-color: $orange;
     height: 50px;
-    width: 178px;
+    min-width: 178px;
     border-radius: 25px;
     &::after {
       position: absolute;
@@ -103,21 +104,17 @@
     align-items: center;
     justify-content: center;
     transition: all 0.3s;
-     &:hover {
-       path {
-         fill: #ffffff;
-       }
-     }
-     &:focus {
-       path {
-         fill: #000000;
-       }
-     }
-     &:active {
-       path {
-         fill: $lightblue
-       }
-     }
+    path {
+    &:hover {
+      fill: #ffffff;
+      }
+    &:focus {
+      fill: #000000;
+      }
+    &:active {
+      fill: $lightblue
+      }
+    }
   }
 
   &__num {

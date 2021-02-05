@@ -10,7 +10,6 @@
   padding: 40px 35px;
   position: relative;
   margin-bottom: 10px;
-
   &:hover {
     .cards__buttons-link {
       opacity: 1;
@@ -37,39 +36,26 @@
     transition: all 0.3s;
     opacity: 0;
     outline: none;
-
     svg {
       height: 46px;
     }
-
     &:hover {
-      svg {
-        path {
-          fill: #ffffff;
-        }
+      background-color: $lightblue;  
+      path{
+        fill: #ffffff;
       }
-
-      background-color: $lightblue;
     }
-
     &:active {
-      svg {
-        path {
-          fill: #ffffff;
-        }
-      }
-
       background-color: $lightblue;
-    }
-
+      path {
+        fill: #ffffff;
+      }
+    } 
     &:focus {
-      svg {
-        path {
-          fill: #ffffff;
-        }
-      }
-
       background-color: $lightblue;
+      path {
+        fill: #ffffff;
+      }
     }
   }
 
@@ -79,9 +65,10 @@
   }
 
   &__text {
+    position: absolute;
     display: flex;
     flex-direction: column;
-    margin-top: auto;
+    bottom: 35px;
   }
 
   &__name {

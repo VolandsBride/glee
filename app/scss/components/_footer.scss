@@ -61,7 +61,6 @@
     border: none;
     color: #234969;
     padding: 9px 20px 10px 20px;
-
     &::placeholder {
       font-size: 12px;
     }
@@ -79,11 +78,9 @@
 
   &__info {
     border-left: 1px solid;
-
     &:first-child {
       border: none;
     }
-
     &:last-child {
       margin-right: -10px;
     }

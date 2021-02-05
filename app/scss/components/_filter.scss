@@ -4,8 +4,8 @@
   justify-content: center;
 
   &__link {
-    &+& {
-      margin-left: 18px;
+    &:not(:last-child) {
+      margin-right: 18px;
     }
   }
 

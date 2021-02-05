@@ -1,5 +1,6 @@
 .button {
   border: none;
+  outline: transparent;
   @extend %Rubik-500;
   text-decoration: none;
   padding: 20px 0 20px 26px;
@@ -18,19 +19,17 @@
     background-color: #ffffff;
     color: $lightblue;
   }
-
   &:focus {
     color: $orange;
     background-color: $lightblue;
     background-image: none;
   }
-
   &:active {
     color: #ffffff;
     background-color: $lightblue;
     background-image: none;
   }
-
+  
   &--transparent {
     min-width: 180px;
     color: #436372;
@@ -39,12 +38,10 @@
     border-radius: 5px;
     padding: 19px 0 19px 20px;
     background-image: url('../images/arrow-blue.svg');
-
     &:hover {
       background-color: #436372;
       color: $orange;
     }
-
     &:focus {
       color: #000000;
     }
@@ -63,12 +60,10 @@
       background-color: #436372;
       color: $orange;
     }
-
     &:active {
       background-color: #ffffff;
       border: 1px solid $lightblue;
     }
-
     &:focus {
       color: #000;
     }
