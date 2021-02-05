@@ -12,6 +12,9 @@
     max-width: 270px;
     width: 100%;
     margin-right: 30px;
+    &--newsletter {
+      margin-right: 0;
+    }
   }
 
   &__logo {
@@ -40,11 +43,6 @@
     margin-bottom: 7px;
   }
 
-  &__item {
-    &--newsletter {
-      margin-right: 0;
-    }
-  }
 
   &__subscribe {
     margin-bottom: 30px;

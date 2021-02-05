@@ -1261,6 +1261,10 @@ body {
   margin-right: 30px;
 }
 
+.footer__item--newsletter {
+  margin-right: 0;
+}
+
 .footer__logo {
   margin-bottom: 25px;
   display: block;
@@ -1283,10 +1287,6 @@ body {
 
 .footer__text {
   margin-bottom: 7px;
-}
-
-.footer__item--newsletter {
-  margin-right: 0;
 }
 
 .footer__subscribe {
