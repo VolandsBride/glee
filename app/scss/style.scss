@@ -12,7 +12,6 @@
 
 
 .top-slider {
-  margin-top: 5px;
   &__inner {
     background-color: $orange;
   }
@@ -30,7 +29,7 @@
     line-height: 1.1;
     @extend %Rubik-500;
     text-transform: uppercase;
-    margin: 210px 0 18px;
+    padding: 210px 0 18px;
   }
 
   &__text {

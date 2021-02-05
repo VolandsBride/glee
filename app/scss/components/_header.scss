@@ -1,6 +1,5 @@
 .header {
   padding: 48px 0 45px;
-
   &__wrapper {
     display: flex;
     justify-content: space-between;
@@ -24,7 +23,6 @@
     font-size: 15px;
     color: #436372;
     @extend %Rubik-500;
-
     &--plus::after {
       content: '+';
       height: 8px;
@@ -35,52 +33,45 @@
 
   &__nav {
     display: flex;
-
-    &--search {
-      background-color: #edf1f4;
-      height: 50px;
-      width: 50px;
-      border-radius: 50px;
-      justify-content: center;
+    path {
+      transition: fill 0.3s;
     }
+  }
 
-    &--menu {
-      background-color: #a3bbc8;
-      height: 50px;
-      width: 50px;
-      border-radius: 50px;
-      justify-content: center;
-    }
+  &__nav-search {
+    background-color: #edf1f4;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    justify-content: center;
+  }
+  &__nav-menu {
+    background-color: #a3bbc8;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    justify-content: center;
   }
 
   &__nav-link {
     display: flex;
     align-items: center;
-    position: relative;
-
-    path {
-      transition: fill 0.3s;
-    }
-
     &+& {
       margin-left: 50px;
     }
-
     &:hover {
       path {
-        fill: rgb(0, 80, 155);
+        fill: $orange;
       }
     }
-
     &:focus {
       path {
-        fill: #ffffff;
+        fill: #000000;
       }
     }
-
     &:active {
       path {
-        fill: #000000;
+        fill: $darkblue;
       }
     }
   }
@@ -94,7 +85,6 @@
     height: 50px;
     width: 178px;
     border-radius: 25px;
-
     &::after {
       position: absolute;
       content: '';
@@ -105,6 +95,31 @@
     }
   }
 
+  &__nav-btn {
+    position: relative;
+    width: 45%;
+    line-height: 1.7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+     &:hover {
+       path {
+         fill: #ffffff;
+       }
+     }
+     &:focus {
+       path {
+         fill: #000000;
+       }
+     }
+     &:active {
+       path {
+         fill: $lightblue
+       }
+     }
+  }
+
   &__num {
     position: absolute;
     width: 16px;
@@ -112,7 +127,7 @@
     border-radius: 50%;
     background-color: #fff;
     top: 9px;
-    right: -11px;
+    right: 20px;
     font-size: 10px;
     line-height: 1.7;
     text-align: center;

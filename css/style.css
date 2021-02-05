@@ -647,7 +647,12 @@ body {
   display: flex;
 }
 
-.header__nav--search {
+.header__nav path {
+  -webkit-transition: fill 0.3s;
+  transition: fill 0.3s;
+}
+
+.header__nav-search {
   background-color: #edf1f4;
   height: 50px;
   width: 50px;
@@ -657,7 +662,7 @@ body {
           justify-content: center;
 }
 
-.header__nav--menu {
+.header__nav-menu {
   background-color: #a3bbc8;
   height: 50px;
   width: 50px;
@@ -674,12 +679,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
-}
-
-.header__nav-link path {
-  -webkit-transition: fill 0.3s;
-  transition: fill 0.3s;
 }
 
 .header__nav-link + .header__nav-link {
@@ -687,15 +686,15 @@ body {
 }
 
 .header__nav-link:hover path {
-  fill: #00509b;
+  fill: #fcd7b6;
 }
 
 .header__nav-link:focus path {
-  fill: #ffffff;
+  fill: #000000;
 }
 
 .header__nav-link:active path {
-  fill: #000000;
+  fill: #243f4d;
 }
 
 .header__nav-wrapper {
@@ -722,6 +721,35 @@ body {
   left: 50%;
 }
 
+.header__nav-btn {
+  position: relative;
+  width: 45%;
+  line-height: 1.7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.header__nav-btn:hover path {
+  fill: #ffffff;
+}
+
+.header__nav-btn:focus path {
+  fill: #000000;
+}
+
+.header__nav-btn:active path {
+  fill: #a3bbc8;
+}
+
 .header__num {
   position: absolute;
   width: 16px;
@@ -729,7 +757,7 @@ body {
   border-radius: 50%;
   background-color: #fff;
   top: 9px;
-  right: -11px;
+  right: 20px;
   font-size: 10px;
   line-height: 1.7;
   text-align: center;
@@ -1082,10 +1110,6 @@ body {
   font-weight: 400;
 }
 
-.top-slider {
-  margin-top: 5px;
-}
-
 .top-slider__inner {
   background-color: #fcd7b6;
 }
@@ -1106,7 +1130,7 @@ body {
   font-size: 72px;
   line-height: 1.1;
   text-transform: uppercase;
-  margin: 210px 0 18px;
+  padding: 210px 0 18px;
 }
 
 .top-slider__text {
