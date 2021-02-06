@@ -5,6 +5,15 @@ $(function (){
     fade: true
   });
 
+  $('.partners__inner').slick({
+    dots: false,
+    arrows: false,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  });
+
   $(".popup").fancybox({
     openEffect: 'elastic',
     closeEffect: 'elastic'

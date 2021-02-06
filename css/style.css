@@ -1255,12 +1255,37 @@ body {
   color: #a3bbc8;
 }
 
+.video {
+  margin-bottom: 110px;
+  position: relative;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.video__link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .footer {
   color: #7b7b7b;
 }
 
 .footer__items {
-  padding: 80px 0 60px;
+  padding-bottom: 60px;
   border-bottom: 1px solid rgba(38, 39, 38, 0.4);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1370,35 +1395,6 @@ body {
   font-weight: 400;
 }
 
-.video {
-  margin-bottom: 100px;
-  position: relative;
-  height: 500px;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.video__link {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.articles {
-  margin-bottom: 70px;
-}
-
 .articles__top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1427,11 +1423,15 @@ body {
 }
 
 .articles__item {
-  height: 420px;
-  width: 370px;
+  min-height: 420px;
+  max-width: 370px;
+  width: 100%;
   background-color: #ffffff;
-  border-radius: 2px;
+  border-radius: 5px;
   position: relative;
+  z-index: 1;
+  -webkit-box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+          box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
 }
 
 .articles__img {
@@ -1479,5 +1479,17 @@ body {
 
 .articles__author {
   padding-left: 40px;
+}
+
+.partners {
+  padding: 270px 0 90px;
+  background-color: rgba(252, 215, 182, 0.2);
+  -webkit-transform: translateY(-38%);
+          transform: translateY(-38%);
+  z-index: -1;
+}
+
+.partners__link {
+  margin: 0 35px;
 }
 /*# sourceMappingURL=style.css.map */
