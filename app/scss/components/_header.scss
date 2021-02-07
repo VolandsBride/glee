@@ -76,14 +76,14 @@
     align-items: center;
     justify-content: center;
     transition: all 0.3s;
+    &:focus {
+      path {
+        fill: #000000;
+      }
+    }
     &:hover {
       path {
         fill: #ffffff;
-      }
-    }
-    &:focus {
-      path { 
-        fill: #000000;
       }
     }
     &:active {
