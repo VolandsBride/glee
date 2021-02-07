@@ -14,11 +14,6 @@ $(function (){
     autoplaySpeed: 2000,
   });
 
-  $(".popup").fancybox({
-    openEffect: 'elastic',
-    closeEffect: 'elastic'
-  });
-
   var mixer1 = mixitup('.products__content', {
     selectors: {
       control: '.filter__btn'
