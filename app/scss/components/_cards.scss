@@ -39,6 +39,12 @@
     svg {
       height: 46px;
     }
+    &:focus {
+      background-color: $lightblue;
+      path {
+        fill: #ffffff;
+      }
+    }
     &:hover {
       background-color: $lightblue;  
       path{
@@ -51,12 +57,6 @@
         fill: #ffffff;
       }
     } 
-    &:focus {
-      background-color: $lightblue;
-      path {
-        fill: #ffffff;
-      }
-    }
   }
 
   &__img {

@@ -6,11 +6,11 @@
   transition: color 0.3s;
   outline: transparent;
   cursor: pointer;
-  &:hover {
-    color: $lightblue;
-  }
   &:focus {
     color: $title-black;
+  }
+  &:hover {
+    color: $lightblue;
   }
   &:active {
     color: $grey;

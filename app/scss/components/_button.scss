@@ -15,21 +15,20 @@
   background-position: 86%;
   cursor: pointer;
   transition: all 0.3s;
-  &:hover {
-    background-color: #ffffff;
-    color: $lightblue;
-  }
   &:focus {
     color: $orange;
     background-color: $lightblue;
     background-image: none;
+  }
+  &:hover {
+    background-color: #ffffff;
+    color: $lightblue;
   }
   &:active {
     color: #ffffff;
     background-color: $lightblue;
     background-image: none;
   }
-  
   &--transparent {
     min-width: 180px;
     color: #436372;
@@ -38,24 +37,25 @@
     border-radius: 5px;
     padding: 19px 0 19px 20px;
     background-image: url('../images/arrow-blue.svg');
+    &:focus {
+      color: #000000;
+    }
     &:hover {
       background-color: #436372;
       color: $orange;
     }
-    &:focus {
-      color: #000000;
-    }
-
     &:active {
       color: $lightblue;
     }
   }
-
   &--small {
     padding: 0 9px;
     min-width: 100px;
     background-color: $lightblue;
     background-image: none;
+    &:focus {
+      color: #000;
+    }
     &:hover {
       background-color: #436372;
       color: $orange;
@@ -63,9 +63,6 @@
     &:active {
       background-color: #ffffff;
       border: 1px solid $lightblue;
-    }
-    &:focus {
-      color: #000;
-    }
+    } 
   }
 }

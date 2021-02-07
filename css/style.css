@@ -401,12 +401,12 @@ body {
   transition: all 0.3s;
 }
 
-.header__nav-btn:hover path {
-  fill: #ffffff;
-}
-
 .header__nav-btn:focus path {
   fill: #000000;
+}
+
+.header__nav-btn:hover path {
+  fill: #ffffff;
 }
 
 .header__nav-btn:active path {
@@ -528,14 +528,14 @@ body {
   outline: transparent;
 }
 
-.top-slider .slick-dots button:hover {
-  background-color: white;
-  color: #243f4d;
-}
-
 .top-slider .slick-dots button:focus {
   background-color: #243f4d;
   color: #ffffff;
+}
+
+.top-slider .slick-dots button:hover {
+  background-color: white;
+  color: #243f4d;
 }
 
 .top-slider .slick-dots button:active {
@@ -733,6 +733,14 @@ body {
   height: 46px;
 }
 
+.cards__buttons-link:focus {
+  background-color: #a3bbc8;
+}
+
+.cards__buttons-link:focus path {
+  fill: #ffffff;
+}
+
 .cards__buttons-link:hover {
   background-color: #a3bbc8;
 }
@@ -746,14 +754,6 @@ body {
 }
 
 .cards__buttons-link:active path {
-  fill: #ffffff;
-}
-
-.cards__buttons-link:focus {
-  background-color: #a3bbc8;
-}
-
-.cards__buttons-link:focus path {
   fill: #ffffff;
 }
 
@@ -915,15 +915,15 @@ body {
   transition: all 0.3s;
 }
 
-.button:hover {
-  background-color: #ffffff;
-  color: #a3bbc8;
-}
-
 .button:focus {
   color: #fcd7b6;
   background-color: #a3bbc8;
   background-image: none;
+}
+
+.button:hover {
+  background-color: #ffffff;
+  color: #a3bbc8;
 }
 
 .button:active {
@@ -942,13 +942,13 @@ body {
   background-image: url("../images/arrow-blue.svg");
 }
 
+.button--transparent:focus {
+  color: #000000;
+}
+
 .button--transparent:hover {
   background-color: #436372;
   color: #fcd7b6;
-}
-
-.button--transparent:focus {
-  color: #000000;
 }
 
 .button--transparent:active {
@@ -962,6 +962,10 @@ body {
   background-image: none;
 }
 
+.button--small:focus {
+  color: #000;
+}
+
 .button--small:hover {
   background-color: #436372;
   color: #fcd7b6;
@@ -970,10 +974,6 @@ body {
 .button--small:active {
   background-color: #ffffff;
   border: 1px solid #a3bbc8;
-}
-
-.button--small:focus {
-  color: #000;
 }
 
 .links-effects {
@@ -986,12 +986,12 @@ body {
   cursor: pointer;
 }
 
-.links-effects:hover {
-  color: #a3bbc8;
-}
-
 .links-effects:focus {
   color: #191919;
+}
+
+.links-effects:hover {
+  color: #a3bbc8;
 }
 
 .links-effects:active {
