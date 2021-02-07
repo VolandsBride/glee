@@ -979,7 +979,7 @@ body {
 }
 
 .links-effects:hover {
-  color: #191919;
+  color: #a3bbc8;
 }
 
 .links-effects:focus {
@@ -987,7 +987,7 @@ body {
 }
 
 .links-effects:active {
-  color: #a3bbc8;
+  color: #7b7b7b;
 }
 
 .video {

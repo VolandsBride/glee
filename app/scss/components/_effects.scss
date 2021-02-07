@@ -7,12 +7,12 @@
   outline: transparent;
   cursor: pointer;
   &:hover {
-    color: $title-black;
+    color: $lightblue;
   }
   &:focus {
     color: $title-black;
   }
   &:active {
-    color: $lightblue;
+    color: $grey;
   }
 }
