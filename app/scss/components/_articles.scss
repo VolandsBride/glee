@@ -31,6 +31,10 @@
 
   &__img {
     margin-bottom: 35px;
+    max-height: 250px;
+    max-width: 370px;
+    width: 100%;
+    object-fit: cover;
   }
 
   &__type {

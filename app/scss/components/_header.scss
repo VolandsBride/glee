@@ -5,34 +5,6 @@
     display: flex;
     justify-content: space-between;
   }
-
-  .menu {
-    display: flex;
-    align-items: center;
-    padding-left: 110px;
-
-    &__list {
-      display: flex;
-    }
-
-    &__item {
-      &:not(:last-child) {
-        margin-right: 35px;
-      }
-    }
-
-    &__link {
-      font-size: 15px;
-      color: #436372;
-      @extend %Rubik-500;
-      &--plus::after {
-        content: '+';
-        height: 8px;
-        width: 8px;
-        margin-left: 4px;
-      }
-    }
-  }
   
   &__nav {
     display: flex;
@@ -104,18 +76,23 @@
     align-items: center;
     justify-content: center;
     transition: all 0.3s;
-    path {
     &:hover {
-      fill: #ffffff;
+      path {
+        fill: #ffffff;
       }
+    }
     &:focus {
-      fill: #000000;
+      path { 
+        fill: #000000;
       }
+    }
     &:active {
-      fill: $lightblue
+      path {
+        fill: $lightblue
       }
     }
   }
+
 
   &__num {
     position: absolute;
@@ -129,5 +106,27 @@
     line-height: 1.7;
     text-align: center;
     color: $darkblue;
+  }
+
+  .menu {
+    display: flex;
+    align-items: center;
+    padding-left: 110px;
+
+    &__list {
+      display: flex;
+    }
+
+    &__item {
+      &:not(:last-child) {
+        margin-right: 35px;
+      }
+    }
+
+    &__link {
+      font-size: 15px;
+      color: #436372;
+      @extend %Rubik-500;
+    }
   }
 }
