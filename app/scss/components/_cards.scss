@@ -62,6 +62,8 @@
   &__img {
     position: absolute;
     bottom: 150px;
+    max-height: 229px;
+    object-fit: cover;
   }
 
   &__text {
