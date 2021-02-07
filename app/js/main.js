@@ -2,7 +2,9 @@ $(function (){
   $('.top-slider__inner').slick({
     dots: true,
     arrows: false,
-    fade: true
+    fade: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
   });
 
   $('.partners__inner').slick({
@@ -12,11 +14,6 @@ $(function (){
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
-  });
-
-  $(".popup").fancybox({
-    openEffect: 'elastic',
-    closeEffect: 'elastic'
   });
 
   var mixer1 = mixitup('.products__content', {
