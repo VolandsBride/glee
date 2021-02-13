@@ -319,7 +319,7 @@ body {
   transition: fill 0.3s;
 }
 
-.header__nav-search {
+.header__nav--search {
   background-color: #edf1f4;
   height: 50px;
   width: 50px;
@@ -329,7 +329,7 @@ body {
           justify-content: center;
 }
 
-.header__nav-menu {
+.header__nav--menu {
   background-color: #a3bbc8;
   height: 50px;
   width: 50px;
@@ -472,7 +472,7 @@ body {
   font-size: 72px;
   line-height: 1.1;
   text-transform: uppercase;
-  padding: 210px 0 18px;
+  margin: 210px 0 18px;
 }
 
 .top-slider__text {
@@ -487,8 +487,8 @@ body {
   max-width: 640px;
   width: 100%;
   max-height: 270px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
   margin: 270px 0 200px;
   position: relative;
 }
@@ -812,7 +812,7 @@ body {
   background-color: rgba(252, 215, 182, 0.4);
 }
 
-.special__block-img {
+.special__img {
   position: absolute;
   bottom: 85px;
   left: 135px;
