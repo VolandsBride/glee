@@ -11,22 +11,20 @@
     path {
       transition: fill 0.3s;
     }
-  }
-
-  &__nav-search {
-    background-color: #edf1f4;
-    height: 50px;
-    width: 50px;
-    border-radius: 50px;
-    justify-content: center;
-  }
-
-  &__nav-menu {
-    background-color: #a3bbc8;
-    height: 50px;
-    width: 50px;
-    border-radius: 50px;
-    justify-content: center;
+    &--search {
+      background-color: #edf1f4;
+      height: 50px;
+      width: 50px;
+      border-radius: 50px;
+      justify-content: center;
+    }
+    &--menu {
+      background-color: #a3bbc8;
+      height: 50px;
+      width: 50px;
+      border-radius: 50px;
+      justify-content: center;
+    }
   }
 
   &__nav-link {
@@ -77,7 +75,7 @@
     justify-content: center;
     transition: all 0.3s;
     &:focus {
-      path {
+      path { 
         fill: #000000;
       }
     }
@@ -92,7 +90,6 @@
       }
     }
   }
-
 
   &__num {
     position: absolute;
