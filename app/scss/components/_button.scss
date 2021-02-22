@@ -17,7 +17,6 @@
   transition: all 0.3s;
   &:focus {
     color: $orange;
-    background-color: $lightblue;
     background-image: none;
   }
   &:hover {
@@ -26,7 +25,6 @@
   }
   &:active {
     color: #ffffff;
-    background-color: $lightblue;
     background-image: none;
   }
   &--transparent {
@@ -51,7 +49,6 @@
   &--small {
     padding: 0 9px;
     min-width: 100px;
-    background-color: $lightblue;
     background-image: none;
     &:focus {
       color: #000;

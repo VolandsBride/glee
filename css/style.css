@@ -9,17 +9,17 @@ body {
   font-weight: 500;
 }
 
-.title, .top-information__title, .filter__btn, .cards__price, .special__block-title, .design__name, .links-effects, .articles__more, .footer__title {
+.title, .top-information__title, .filter__btn, .cards__price, .special__title, .design__name, .links-effects, .articles__more, .footer__title {
   font-family: 'DMSans', sans-serif;
   font-weight: 700;
 }
 
-.top-slider__text, .special__block-descr, .articles__data, .footer__link {
+.top-slider__text, .special__descr, .articles__data, .footer__link {
   font-family: 'Rubik', sans-serif;
   font-weight: 400;
 }
 
-.header .menu__link, .top-slider__title, .top-slider .slick-dots button, .button {
+.menu__link, .top-slider__title, .top-slider .slick-dots button, .button {
   font-family: 'Rubik', sans-serif;
   font-weight: 500;
 }
@@ -427,7 +427,7 @@ body {
   color: #243f4d;
 }
 
-.header .menu {
+.menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -437,17 +437,17 @@ body {
   padding-left: 110px;
 }
 
-.header .menu__list {
+.menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.header .menu__item:not(:last-child) {
+.menu__item:not(:last-child) {
   margin-right: 35px;
 }
 
-.header .menu__link {
+.menu__link {
   font-size: 15px;
   color: #436372;
 }
@@ -726,7 +726,6 @@ body {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   opacity: 0;
-  outline: none;
 }
 
 .cards__buttons-link svg {
@@ -820,7 +819,7 @@ body {
   max-height: 420px;
 }
 
-.special__block-text {
+.special__text {
   max-width: 337px;
   width: 100%;
   text-align: left;
@@ -830,12 +829,12 @@ body {
   right: 120px;
 }
 
-.special__block-title {
+.special__title {
   font-size: 26px;
   margin-bottom: 24px;
 }
 
-.special__block-descr {
+.special__descr {
   line-height: 2;
   margin-bottom: 30px;
 }
@@ -917,7 +916,6 @@ body {
 
 .button:focus {
   color: #fcd7b6;
-  background-color: #a3bbc8;
   background-image: none;
 }
 
@@ -928,7 +926,6 @@ body {
 
 .button:active {
   color: #ffffff;
-  background-color: #a3bbc8;
   background-image: none;
 }
 
@@ -958,7 +955,6 @@ body {
 .button--small {
   padding: 0 9px;
   min-width: 100px;
-  background-color: #a3bbc8;
   background-image: none;
 }
 
@@ -1119,7 +1115,6 @@ body {
   background-color: rgba(252, 215, 182, 0.2);
   -webkit-transform: translateY(-38%);
           transform: translateY(-38%);
-  z-index: -1;
 }
 
 .partners__link {

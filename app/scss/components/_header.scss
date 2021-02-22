@@ -104,26 +104,26 @@
     text-align: center;
     color: $darkblue;
   }
+}
 
-  .menu {
+.menu {
+  display: flex;
+  align-items: center;
+  padding-left: 110px;
+
+  &__list {
     display: flex;
-    align-items: center;
-    padding-left: 110px;
+  }
 
-    &__list {
-      display: flex;
+  &__item {
+    &:not(:last-child) {
+      margin-right: 35px;
     }
+  }
 
-    &__item {
-      &:not(:last-child) {
-        margin-right: 35px;
-      }
-    }
-
-    &__link {
-      font-size: 15px;
-      color: #436372;
-      @extend %Rubik-500;
-    }
+  &__link {
+    font-size: 15px;
+    color: #436372;
+    @extend %Rubik-500;
   }
 }
