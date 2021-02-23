@@ -1,0 +1,77 @@
+.modal {
+  padding-top: 120px;
+  max-width: 470px;
+  margin: 0 auto 120px;
+  position: relative;
+
+  &__label {
+    @extend %Rubik-400;
+    font-size: 14px;
+    color: #436372;
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    border: 2px solid #f6f6f6;
+    margin: 10px 0 30px;
+    padding: 0 15px;
+    height: 56px;
+  }
+
+  &__btn {
+    display: block;
+    height: 60px;
+    width: 100%;
+    @extend %Rubik-500;
+    font-size: 18px;
+    background-color: $lightblue;
+    color: #fff;
+    border: none;
+    margin-bottom: 34px;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover {
+      background-color: transparent;
+      border: 1px solid $lightblue;
+      color: $title-black;
+    }
+    &--create {
+      margin-top: 25px;
+      background-color: transparent;
+      border: 2px solid $lightblue;
+      color: $title-black;
+      &:hover {
+        background-color: $lightblue;
+        color: #fff;
+        border: none;
+      }
+    }
+  }
+
+  &__error {
+    @extend %Rubik-400;
+    font-size: 14px;
+    color: #436372;
+    position: absolute;
+    right: 0;
+    line-height: 1.7;
+  }
+
+  &__line {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #f6f6f6;
+    margin-top: 30px;
+  }
+
+  &__reg {
+    display: block;
+    @extend %Rubik-400;
+    font-size: 14px;
+    color: #436372;
+    margin-top: 30px;
+    text-align: center;
+  }
+}
