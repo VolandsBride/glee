@@ -16,6 +16,10 @@ $(function (){
     autoplaySpeed: 2000,
   });
 
+  $("#rateYo").rateYo({
+    rating: 3.6
+  });
+
   var mixer1 = mixitup('.products__content', {
     selectors: {
       control: '.filter__btn'

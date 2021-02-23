@@ -29,7 +29,12 @@
 
 
 
-
-
-
-
+.top {
+  background-color: #edf1f4;
+  padding: 35px 0;
+  text-align: center;
+  &__title {
+    @extend %Rubik-300;
+    margin-bottom: 10px;
+  }
+}
