@@ -1,4 +1,5 @@
 @import url(/Users/admin/Desktop/from0to1/glee/node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css);
+@import url(/Users/admin/Desktop/from0to1/glee/node_modules/rateyo/src/jquery.rateyo.css);
 body {
   font-family: 'DMSans', sans-serif;
   font-weight: 400;
@@ -14,12 +15,17 @@ body {
   font-weight: 700;
 }
 
-.top-slider__text, .special__descr, .articles__data, .footer__link {
+.top__title {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+}
+
+.breadcrumbs__link, .top-slider__text, .special__descr, .articles__data, .modal__label, .modal__error, .modal__reg, .footer__link {
   font-family: 'Rubik', sans-serif;
   font-weight: 400;
 }
 
-.menu__link, .top-slider__title, .top-slider .slick-dots button, .button {
+.menu__link, .top-slider__title, .top-slider .slick-dots button, .button, .modal__btn {
   font-family: 'Rubik', sans-serif;
   font-weight: 500;
 }
@@ -50,6 +56,14 @@ body {
   font-weight: 700;
   font-style: normal;
   src: url("../fonts/DMSans-Bold.woff2") format("woff2"), url("../fonts/DMSans-Bold.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  font-weight: 300;
+  font-style: normal;
+  src: url("../fonts/Rubik-Light.woff2") format("woff2"), url("../fonts/Rubik-Light.woff") format("woff");
   font-display: swap;
 }
 
@@ -283,6 +297,48 @@ body {
   color: #191919;
 }
 
+.breadcrumbs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.breadcrumbs__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.breadcrumbs__item {
+  position: relative;
+  color: #7b7b7b;
+  padding-right: 25px;
+}
+
+.breadcrumbs__item::after {
+  content: "/";
+  position: absolute;
+  right: 10px;
+}
+
+.breadcrumbs__item:last-child {
+  color: #191919;
+  padding-right: 0;
+}
+
+.breadcrumbs__item:last-child::after {
+  display: none;
+}
+
+.breadcrumbs__link {
+  font-size: 14px;
+  color: inherit;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -450,6 +506,16 @@ body {
 .menu__link {
   font-size: 15px;
   color: #436372;
+}
+
+.top {
+  background-color: #edf1f4;
+  padding: 35px 0;
+  text-align: center;
+}
+
+.top__title {
+  margin-bottom: 10px;
 }
 
 .top-slider__inner {
@@ -1108,6 +1174,84 @@ body {
 
 .articles__author {
   padding-left: 40px;
+}
+
+.modal {
+  padding-top: 120px;
+  max-width: 470px;
+  margin: 0 auto 120px;
+  position: relative;
+}
+
+.modal__label {
+  font-size: 14px;
+  color: #436372;
+}
+
+.modal__input {
+  display: block;
+  width: 100%;
+  border: 2px solid #f6f6f6;
+  margin: 10px 0 30px;
+  padding: 0 15px;
+  height: 56px;
+}
+
+.modal__btn {
+  display: block;
+  height: 60px;
+  width: 100%;
+  font-size: 18px;
+  background-color: #a3bbc8;
+  color: #fff;
+  border: none;
+  margin-bottom: 34px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.modal__btn:hover {
+  background-color: transparent;
+  border: 1px solid #a3bbc8;
+  color: #191919;
+}
+
+.modal__btn--create {
+  margin-top: 25px;
+  background-color: transparent;
+  border: 2px solid #a3bbc8;
+  color: #191919;
+}
+
+.modal__btn--create:hover {
+  background-color: #a3bbc8;
+  color: #fff;
+  border: none;
+}
+
+.modal__error {
+  font-size: 14px;
+  color: #436372;
+  position: absolute;
+  right: 0;
+  line-height: 1.7;
+}
+
+.modal__line {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: #f6f6f6;
+  margin-top: 30px;
+}
+
+.modal__reg {
+  display: block;
+  font-size: 14px;
+  color: #436372;
+  margin-top: 30px;
+  text-align: center;
 }
 
 .partners {
