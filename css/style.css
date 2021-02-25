@@ -1265,6 +1265,13 @@ body {
   margin: 0 35px;
 }
 
+.partners--page {
+  padding: 60px 0 50px;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  margin-bottom: 65px;
+}
+
 .footer {
   color: #7b7b7b;
 }
