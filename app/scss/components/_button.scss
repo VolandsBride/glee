@@ -1,6 +1,6 @@
 .button {
   border: none;
-  outline: transparent;
+  outline-color: #000;
   @extend %Rubik-500;
   text-decoration: none;
   padding: 20px 0 20px 26px;
@@ -50,6 +50,23 @@
     padding: 0 9px;
     min-width: 100px;
     background-image: none;
+    &:focus {
+      color: #000;
+    }
+    &:hover {
+      background-color: #436372;
+      color: $orange;
+    }
+    &:active {
+      background-color: #ffffff;
+      border: 1px solid $lightblue;
+    }
+  }
+  &--middle {
+    @extend %Rubik-400;
+    padding: 16px;
+    min-width: 170px;
+    border-radius: 5px;
     &:focus {
       color: #000;
     }

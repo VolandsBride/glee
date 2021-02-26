@@ -20,7 +20,7 @@ body {
   font-weight: 300;
 }
 
-.breadcrumbs__link, .top-slider__text, .special__descr, .articles__data, .modal__label, .modal__error, .modal__reg, .footer__link, .about__years-text, .about__text {
+.breadcrumbs__link, .top-slider__text, .special__descr, .button--middle, .articles__data, .modal__label, .modal__error, .modal__reg, .footer__link, .about__years-text, .about__text, .team__descr, .team__position {
   font-family: 'Rubik', sans-serif;
   font-weight: 400;
 }
@@ -968,7 +968,7 @@ body {
 
 .button {
   border: none;
-  outline: transparent;
+  outline-color: #000;
   text-decoration: none;
   padding: 20px 0 20px 26px;
   min-width: 200px;
@@ -1039,6 +1039,26 @@ body {
 }
 
 .button--small:active {
+  background-color: #ffffff;
+  border: 1px solid #a3bbc8;
+}
+
+.button--middle {
+  padding: 16px;
+  min-width: 170px;
+  border-radius: 5px;
+}
+
+.button--middle:focus {
+  color: #000;
+}
+
+.button--middle:hover {
+  background-color: #436372;
+  color: #fcd7b6;
+}
+
+.button--middle:active {
   background-color: #ffffff;
   border: 1px solid #a3bbc8;
 }
@@ -1556,5 +1576,73 @@ body {
 .about-clients__text {
   font-weight: 700;
   font-size: 18px;
+}
+
+.team {
+  padding: 120px 0;
+}
+
+.team__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.team__text {
+  max-width: 295px;
+  width: 100%;
+  margin-right: 90px;
+}
+
+.team__title {
+  margin-bottom: 34px;
+}
+
+.team__descr {
+  line-height: 1.7;
+  margin-bottom: 40px;
+}
+
+.team__people {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.team__member {
+  position: relative;
+  margin-bottom: 90px;
+}
+
+.team__name {
+  position: absolute;
+  font-weight: 700;
+  font-size: 22px;
+  color: #436372;
+  padding: 30px 0 30px 30px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+          box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+  width: 325px;
+  bottom: -60px;
+}
+
+.team__position {
+  display: block;
+  font-size: 16px;
+  color: #565872;
+  padding-top: 15px;
+}
+
+.team__social {
+  position: absolute;
+  right: 80px;
+  bottom: -10px;
+}
+
+.team__instagram {
+  padding-right: 20px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -157,3 +157,60 @@
     font-size: 18px;
   }
 }
+
+.team {
+  padding: 120px 0;
+
+  &__inner {
+    display: flex;
+  }
+  &__text {
+    max-width: 295px;
+    width: 100%;
+    margin-right: 90px;
+  }
+  &__title {
+    margin-bottom: 34px;
+  }
+  &__descr {
+    @extend %Rubik-400;
+    line-height: 1.7;
+    margin-bottom: 40px;
+  }
+  &__people {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  &__member {
+    position: relative;
+    margin-bottom: 90px;
+  }
+  &__name {
+    position: absolute;
+    font-weight: 700;
+    font-size: 22px;
+    color: #436372;
+    padding: 30px 0 30px 30px;
+    background-color: #fff;
+    box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+    width: 325px;
+    bottom: -60px;
+  }
+  &__position {
+    display: block;
+    @extend %Rubik-400;
+    font-size: 16px;
+    color: #565872;
+    padding-top: 15px;
+  }
+  &__social {
+    position: absolute;
+    right: 80px;
+    bottom: -10px;
+  }
+  &__instagram {
+    padding-right: 20px;
+  }
+
+}
