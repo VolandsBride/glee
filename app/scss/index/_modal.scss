@@ -17,6 +17,7 @@
     margin: 10px 0 30px;
     padding: 0 15px;
     height: 56px;
+    outline-color: $darkblue;
   }
 
   &__btn {
@@ -28,6 +29,7 @@
     background-color: $lightblue;
     color: #fff;
     border: none;
+    outline-color: $darkblue;
     margin-bottom: 34px;
     cursor: pointer;
     transition: all 0.3s;

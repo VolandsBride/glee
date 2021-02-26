@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Log in form</title>
+  <title>About Us</title>
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 </head>
@@ -87,18 +87,18 @@
     <section class="top">
       <div class="top__text">
         <div class="top__title title">
-          Log in
+          About Us
         </div>
         <div class="breadcrumbs">
           <ul class="breadcrumbs__list">
             <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link links-effects" href="#">
+              <a class="breadcrumbs__link" href="#">
                 Home
               </a>
             </li>
             <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link links-effects" href="#">
-                Log in
+              <a class="breadcrumbs__link" href="#">
+                About us
               </a>
             </li>
           </ul>
@@ -106,73 +106,179 @@
       </div>
     </section>
 
-    <section class="modal">
-      <form class="modal__form">
-        <label class="modal__label">
-          Username or email address*
-          <input class="modal__input" type="text" required>
-        </label>
-        <label class="modal__label">
-          Password*
-          <input class="modal__input" type="password" required>
-        </label>
-        <button class="modal__btn" type="submit">
-          Log in
-        </button>
-        <label class="modal__label">
-          <input type="checkbox">
-          Remember me
-        </label>
-        <a class="modal__error links-effects" href="#">
-          Lost your password?
-        </a>
-        <span class="modal__line"></span>
-        <a class="modal__reg links-effects" href="#">
-          Not registered? No problem
-        </a>
-        <button class="modal__btn modal__btn--create" type="submit">
-          Create an account
-        </button>
-      </form>
+    <section class="about">
+      <div class="container container--small">
+        <div class="about__inner">
+          <img class="about__img" src="images/about-us.jpg" alt="About image">
+          <div class="about__info">
+            <div class="about__years">
+              <div class="about__years-num">
+                12
+              </div>
+              <div class="about__years-text">
+                <p>Years</p>
+                <p>Experience</p>
+                <p>Working</p>
+              </div>
+            </div>
+            <h2 class="about__title title">
+              Mission of our creative house
+            </h2>
+            <p class="about__text">
+              consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+              ad
+              minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+              irure dolor in reprehenderit in voluptate velit esse cillum
+            </p>
+            <span class="about__line"></span>
+            <div class="about__stats">
+              <div class="about__data about__data--projects">
+                <div class="about__num">
+                  520+
+                </div>
+                <div class="about__subhead">
+                  Projects
+                </div>
+              </div>
+              <div class="about__data about__data--revenue">
+                <div class="about__num">
+                  $4M
+                </div>
+                <div class="about__subhead">
+                  Revenue
+                </div>
+              </div>
+              <div class="about__data about__data--awards">
+                <div class="about__num">
+                  250
+                </div>
+                <div class="about__subhead">
+                  Awards
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
 
-    <div class="partners partners--page">
+    <section class="articles">
       <div class="container container--small">
-        <div class="partners__inner">
-          <a class="partners__link" href="#">
-            <img class="partners__logo" src="images/partners/partner-1.png" alt="partners logo">
-          </a>
-          <a class="partners__link" href="#">
-            <img class="partners__logo" src="images/partners/partner-2.png" alt="partners logo">
-          </a>
-          <a class="partners__link" href="#">
-            <img class="partners__logo" src="images/partners/partner-3.png" alt="partners logo">
-          </a>
-          <a class="partners__link" href="#">
-            <img class="partners__logo" src="images/partners/partner-4.png" alt="partners logo">
-          </a>
-          <a class="partners__link" href="#">
-            <img class="partners__logo" src="images/partners/partner-5.png" alt="partners logo">
-          </a>
-          <a class="partners__link" href="#">
-            <img class="partners__logo" src="images/partners/partner-1.png" alt="partners logo">
-          </a>
-          <a class="partners__link" href="#">
-            <img class="partners__logo" src="images/partners/partner-2.png" alt="partners logo">
-          </a>
-          <a class="partners__link" href="#">
-            <img class="partners__logo" src="images/partners/partner-3.png" alt="partners logo">
-          </a>
-          <a class="partners__link" href="#">
-            <img class="partners__logo" src="images/partners/partner-4.png" alt="partners logo">
-          </a>
-          <a class="partners__link" href="#">
-            <img class="partners__logo" src="images/partners/partner-5.png" alt="partners logo">
+        <div class="articles__top">
+          <h2 class="articles__title title">
+            Our Insights & Articles
+          </h2>
+          <a class="articles__more links-effects" href="#">
+            View All >
           </a>
         </div>
+        <div class="articles__inner">
+          <article class="articles__item">
+            <a href="" class="articles__link">
+              <span class="sr-only">Read article</span>
+              <img class="articles__img" src="images/articles/article-1.png" alt="article image">
+              <span href="#" class="articles__type">
+                news
+              </span>
+            </a>
+            <div class="articles__info">
+              <a class="articles__descr" href="#">
+                Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+              </a>
+              <div class="articles__data">
+                <time datetime="2020-09-28 19:00">
+                  28 january, 2020
+                </time>
+                <span class="articles__author">
+                  by admin
+                </span>
+              </div>
+            </div>
+          </article>
+          <article class="articles__item">
+            <a href="#" class="articles__link">
+              <span class="sr-only">Read article</span>
+              <img class="articles__img" src="images/articles/article-2.png" alt="article image">
+              <span href="" class="articles__type">
+                news
+              </span>
+            </a>
+            <div class="articles__info">
+              <a class="articles__descr" href="#">
+                Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+              </a>
+              <div class="articles__data">
+                <time datetime="2020-09-28 19:00">
+                  28 january, 2020
+                </time>
+                <span class="articles__author">
+                  by admin
+                </span>
+              </div>
+            </div>
+          </article>
+          <article class="articles__item">
+            <a href="#" class="articles__link">
+              <span class="sr-only">Read article</span>
+              <img class="articles__img" src="images/articles/article-3.png" alt="article image">
+              <span href="" class="articles__type">
+                news
+              </span>
+            </a>
+            <div class="articles__info">
+              <a class="articles__descr" href="#">
+                Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+              </a>
+              <div class="articles__data">
+                <time datetime="2020-09-28 19:00">
+                  28 january, 2020
+                </time>
+                <span class="articles__author">
+                  by admin
+                </span>
+              </div>
+            </div>
+          </article>
+        </div>
       </div>
-    </div>
+
+      <div class="partners">
+        <div class="container container--small">
+          <div class="partners__inner">
+            <a class="partners__link" href="#">
+              <img class="partners__logo" src="images/partners/partner-1.png" alt="partners logo">
+            </a>
+            <a class="partners__link" href="#">
+              <img class="partners__logo" src="images/partners/partner-2.png" alt="partners logo">
+            </a>
+            <a class="partners__link" href="#">
+              <img class="partners__logo" src="images/partners/partner-3.png" alt="partners logo">
+            </a>
+            <a class="partners__link" href="#">
+              <img class="partners__logo" src="images/partners/partner-4.png" alt="partners logo">
+            </a>
+            <a class="partners__link" href="#">
+              <img class="partners__logo" src="images/partners/partner-5.png" alt="partners logo">
+            </a>
+            <a class="partners__link" href="#">
+              <img class="partners__logo" src="images/partners/partner-1.png" alt="partners logo">
+            </a>
+            <a class="partners__link" href="#">
+              <img class="partners__logo" src="images/partners/partner-2.png" alt="partners logo">
+            </a>
+            <a class="partners__link" href="#">
+              <img class="partners__logo" src="images/partners/partner-3.png" alt="partners logo">
+            </a>
+            <a class="partners__link" href="#">
+              <img class="partners__logo" src="images/partners/partner-4.png" alt="partners logo">
+            </a>
+            <a class="partners__link" href="#">
+              <img class="partners__logo" src="images/partners/partner-5.png" alt="partners logo">
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
@@ -308,5 +414,7 @@
 
   <script src="js/main.min.js"></script>
 </body>
+
+
 
 </html>
