@@ -9,7 +9,6 @@
     font-size: 14px;
     color: #436372;
   }
-
   &__input {
     display: block;
     width: 100%;
@@ -19,7 +18,6 @@
     height: 56px;
     outline-color: $darkblue;
   }
-
   &__btn {
     display: block;
     height: 60px;
@@ -50,7 +48,6 @@
       }
     }
   }
-
   &__error {
     @extend %Rubik-400;
     font-size: 14px;
@@ -59,7 +56,6 @@
     right: 0;
     line-height: 1.7;
   }
-
   &__line {
     display: block;
     height: 2px;
@@ -67,7 +63,6 @@
     background-color: #f6f6f6;
     margin-top: 30px;
   }
-
   &__reg {
     display: block;
     @extend %Rubik-400;
