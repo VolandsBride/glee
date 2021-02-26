@@ -32,3 +32,185 @@
 @import 'components/footer';
 
 
+
+.about {
+  padding: 120px 0;
+
+  &__inner {
+    display: flex;
+  }
+  &__img {
+    height: 673px;
+    width: 573px;
+    margin-right: 50px;
+  }
+  &__years {
+    margin: 80px 0 40px;
+    display: flex;
+    align-items: flex-end;
+  }
+  &__years-num {
+    @extend %Rubik-700;
+    font-size: 140px;
+    color: $lightblue;
+    line-height: 0.8;
+    margin-right: 20px;
+  }
+  &__years-text {
+    @extend %Rubik-400;
+    line-height: 1.9;
+  }
+  &__title {
+    margin-bottom: 40px;
+  }
+  &__text {
+    @extend %Rubik-400;
+    line-height: 1.7;
+    margin-bottom: 40px;
+  }
+  &__line {
+    display: block;
+    height: 2px;
+    width: 94%;
+    background-color: #f6f6f6;
+    margin-bottom: 40px;
+  }
+  &__stats {
+    display: flex;
+    font-weight: 700;
+    margin-left: 55px;
+  }
+  &__data {
+    position: relative;
+    &+& {
+      padding-left: 120px;
+    }
+    &::before {
+      position: absolute;
+      content: "";
+      background-repeat: no-repeat;
+      height: 100%;
+      width: 100%;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      height: 80px;
+      width: 2px;
+      background-color: #f6f6f6;
+      top: -10px;
+      right: -27px;
+    }
+    &:last-child::after {
+      display: none;
+    }
+
+    &--projects::before {
+      position: absolute;
+      background-image: url('../images/icons/icon-about-1.svg');
+      left: -55px;
+      top: 10px;
+    }
+    &--revenue::before {
+      background-image: url('../images/icons/icon-about-2.svg');
+      left: 60px;
+      top: 10px;
+    }
+    &--awards::before {
+      background-image: url('../images/icons/icon-about-3.svg');
+      left: 60px;
+      top: 10px;
+    }
+  }
+  &__num {
+    font-size: 36px;
+  }
+  &__subhead {
+    color: #4c4c4c;
+  }
+}
+
+.about-clients {
+  background-color: $orange;
+
+  &__inner {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding: 80px 0;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__img {
+    padding-bottom: 15px;
+  }
+  &__num {
+    font-weight: 700;
+    font-size: 36px;
+    padding-bottom: 15px;
+  }
+  &__text {
+    font-weight: 700;
+    font-size: 18px;
+  }
+}
+
+.team {
+  padding: 120px 0;
+
+  &__inner {
+    display: flex;
+  }
+  &__text {
+    max-width: 295px;
+    width: 100%;
+    margin-right: 90px;
+  }
+  &__title {
+    margin-bottom: 34px;
+  }
+  &__descr {
+    @extend %Rubik-400;
+    line-height: 1.7;
+    margin-bottom: 40px;
+  }
+  &__people {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  &__member {
+    position: relative;
+    margin-bottom: 90px;
+  }
+  &__name {
+    position: absolute;
+    font-weight: 700;
+    font-size: 22px;
+    color: #436372;
+    padding: 30px 0 30px 30px;
+    background-color: #fff;
+    box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+    width: 325px;
+    bottom: -60px;
+  }
+  &__position {
+    display: block;
+    @extend %Rubik-400;
+    font-size: 16px;
+    color: #565872;
+    padding-top: 15px;
+  }
+  &__social {
+    position: absolute;
+    right: 80px;
+    bottom: -10px;
+  }
+  &__instagram {
+    padding-right: 20px;
+  }
+
+}
