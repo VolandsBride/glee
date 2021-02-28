@@ -20,7 +20,7 @@ body {
   font-weight: 300;
 }
 
-.breadcrumbs__link, .top-slider__text, .special__descr, .button--middle, .articles__data, .modal__label, .modal__error, .modal__reg, .about__years-text, .about__text, .team__descr, .team__position, .footer__link, .personal__item, .personal__info-text {
+.breadcrumbs__link, .top-slider__text, .special__descr, .button--middle, .articles__data, .modal__label, .modal__error, .modal__reg, .about__years-text, .about__text, .team__descr, .team__position, .personal__item, .personal__info-text, .footer__link {
   font-family: 'Rubik', sans-serif;
   font-weight: 400;
 }
@@ -1557,6 +1557,34 @@ body {
   margin-right: 7px;
 }
 
+.personal {
+  padding-top: 120px;
+}
+
+.personal__title {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.personal__list {
+  list-style-type: decimal-leading-zero;
+  margin: 0 0 40px 30px;
+}
+
+.personal__item {
+  line-height: 1.8;
+  padding: 0 0 25px 10px;
+}
+
+.personal__info-text {
+  line-height: 1.8;
+  margin-bottom: 60px;
+}
+
+.personal__info:last-child {
+  margin-bottom: 120px;
+}
+
 .partners {
   padding: 270px 0 90px;
   background-color: rgba(252, 215, 182, 0.2);
@@ -1689,35 +1717,5 @@ body {
 .footer__info-link {
   padding: 0 14px 0;
   font-weight: 400;
-}
-
-.personal {
-  padding-top: 120px;
-}
-
-.personal__title {
-  font-size: 24px;
-  margin-bottom: 30px;
-}
-
-.personal__list {
-  list-style-type: decimal-leading-zero;
-  margin: 0 0 40px 30px;
-}
-
-.personal__item {
-  line-height: 1.8;
-  padding-bottom: 25px;
-  padding-left: 10px;
-}
-
-.personal__info-text {
-  line-height: 1.8;
-  line-height: 1.8;
-  margin-bottom: 60px;
-}
-
-.personal__info:last-child {
-  margin-bottom: 120px;
 }
 /*# sourceMappingURL=style.css.map */
