@@ -69,6 +69,7 @@
     border-radius: 5px;
     &:focus {
       color: #000;
+      background-image: none;
     }
     &:hover {
       background-color: #436372;
@@ -77,6 +78,7 @@
     &:active {
       background-color: #ffffff;
       border: 1px solid $lightblue;
+      background-image: none;
     }
   }
 }
